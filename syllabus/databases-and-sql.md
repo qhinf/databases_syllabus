@@ -63,7 +63,7 @@ Deze opdracht duurt ongeveer 1 les.
 ## Opdracht 2.2
 Met deze opdracht ben je minimaal 3 lessen bezig.
 
-De [uitleg en inhoud van deze opdracht staan hier](/modules/databases-and-sql/sql-inleveropdracht) 
+De [uitleg en inhoud van deze opdracht staan hier](sql-inleveropdracht.md) 
 
 # 3. Een informatiesysteem ontwerpen
 

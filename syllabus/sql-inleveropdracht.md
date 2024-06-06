@@ -21,14 +21,14 @@ Score: 1 punt per goede query, totaal 63 queries en het minimum is een 1, maximu
 - Ga naar [informatica VO SQL](https://sql.informaticavo.nl/index.html)
 
 - Klik op het blauwe SQL-logo linksbovenin (open deze in een nieuw tabblad):
-![Pasted%20image%2020220918123035](Pasted%20image%2020220918123035.png "Pasted%20image%2020220918123035")
+![Pasted_image_20220918123035](Pasted_image_20220918123035.png "Pasted_image_20220918123035")
 
 Je ziet dan:
-![Pasted%20image%2020220918123136](Pasted%20image%2020220918123136.png "Pasted%20image%2020220918123136")
+![Pasted_image_20220918123136](Pasted_image_20220918123136.png "Pasted_image_20220918123136")
 
 Om SQL queries te maken, klik daar op SQL (tweede tabje)
 Je ziet dan:
-![Pasted%20image%2020220918123217](Pasted%20image%2020220918123217.png "Pasted%20image%2020220918123217")
+![Pasted_image_20220918123217](Pasted_image_20220918123217.png "Pasted_image_20220918123217")
 
 De secties in de opgaves komen overeen met de secties op [informatica VO SQL](https://sql.informaticavo.nl/index.html). De tekst bij die secties legt (vaak) uit wat je nodig hebt om de queries in die sectie te kunnen maken.
 De opdrachten hieronder lijken heel erg op de opgaven daar, maar, zijn soms toch *net* even anders. Dus maak ajb de opgaven hieronder.
