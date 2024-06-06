@@ -119,7 +119,7 @@ Een logisch ontwerp bestaat uit entiteiten en attributen.
 
 De entiteiten en attributen, die voorkomen in een logisch ontwerp, vertalen zich in een fysiek ontwerp naar *tabellen* en *kolomnamen*
 
-![Leerling](3.5%20leerling.jpg)
+![Leerling](3.5_leerling.jpg)
 
 | Leerling  |                |                   |                |
 | ------------ | -------------- | ----------------- | -------------- |
@@ -165,7 +165,7 @@ In het fysieke model heet een UID de *primary key* of PK.
 
 De entiteit `LEERLING` zou er dan als volgt uit kunnen zien:
 
-![Leerling](3.6%20leerling.jpg)
+![Leerling](3.6_leerling.jpg)
 
 In je ERD geef je deze attribuut-eigenschappen als volgt weer:
 - *#*= *primary UID*. Dit is de UID die uiteindelijk gebruikt gaat worden
@@ -219,23 +219,23 @@ Er bestaan meerdere notaties, maar wij gebruiken de _kraaienpoot_ notatie, omdat
 
 De zinnen in het voorbeeld laten zich naar het volgende ERD omzetten. De zin 'Iedere werknemer heeft één of meer banen' lees je in het onderstaande diagram af van links naar rechts. De kardinaliteit van de relatie wordt aangegeven door die vorm, die op een slecht getekende letter K lijkt. De kardinaliteit zet je dus bij het lijdend voorwerp van de Erdisch zin.
 
-![](4.1%20werknemer-baan.jpg)
+![](4.1_werknemer-baan.jpg)
 
-![](4.1%20klant-product.jpg)
+![](4.1_klant-product.jpg)
 
 De vier kardinaliteiten worden in een diagram met de volgende kraaienpoten weergegeven:
 
 | Kardinaliteit | De bijbehorende kraaienpoot |
 | :------------ | --------------------------- |
-| Nul of één    | ![](4.1%20nul-of-een.jpg)            |
-| Precies één   | ![](4.1%20precies-een.jpg)           |
-| Nul of meer   | ![](4.1%20nul-of-meer.jpg)           |
-| Één of meer   | ![](4.1%20een-of-meer.jpg)           |
+| Nul of één    | ![](4.1_nul-of-een.jpg)            |
+| Precies één   | ![](4.1_precies-een.jpg)           |
+| Nul of meer   | ![](4.1_nul-of-meer.jpg)           |
+| Één of meer   | ![](4.1_een-of-meer.jpg)           |
 
 Tussen de entiteiten worden doorgaans onderbroken lijnen getrokken. Met een doorgetrokken of ononderbroken lijn geef je aan dat er een *ouder-kind*-relatie is. Hieronder staat een voorbeeld. De kind-entiteit erft hier het UID van de ouder-entiteit. Je kunt met deze notatie helaas niet zo snel zien wat de ouder-entiteit en wat de kind-entiteit is. Wanneer je iets dieper naar het diagram kijkt, zie dat er alleen een primary UID voor ``werknemer`` is gedefinieerd, dus dat is de ouder-entiteit en ``salarisgeschiedenis`` is de kind-entiteit. De doorgetrokken lijn geeft aan dat er een ouder-kind relatie is.
 Je zult je nu afvragen: elke entiteit moet toch een UID hebben? Dat klopt. In het geval van ``salarisgeschiedenis`` is de UID ``werknemer_id``. De UID voor deze entiteit bestaat dus niet uit een attribuut, maar uit een relatie! **Belangrijk**: in het fysieke model komt hiervoor een extra kolom ``werknemer_id`` in de tabel ``SALARISGESCHIEDENIS``.
 
-![](4.1%20werknemer-salaris.jpg)
+![](4.1_werknemer-salaris.jpg)
 
 ## 4.2 ERD
 De diagrammen, die we hierboven beschreven hebben, noemen we een _ERD_, een _Entity Relationship Diagram_. Je hebt tot nu alleen nog erg eenvoudige ERD's gezien. Een ERD geeft de belangrijke entiteiten en hun relaties weer. Het doel van een ERD is om in de analyse en logische fase van het ontwerp een voorstel te documenteren, waarover met de opdrachtgever gediscussieerd kan worden.
@@ -257,11 +257,11 @@ Andere constraints zoals welke attributen tot de UID behoren kun je wel in de ER
 **Overdraagbaarheid**
 Sommige relaties zijn niet *overdraagbaar* (transferable). Het komt alleen voor aan de "één"-kant van relaties met de kardinaliteit _één-of-meer_. Weet je nog welke kraaienpoot hierbij hoort? Niet overdraagbare relaties zul je wel in je ERD moeten noteren. In het fysieke model maak je vervolgens de relatie aan die kant _niet aanpasbaar (not updatable)_. Bekijk het voorbeeld hieronder.
 
-![](4.2%20dichter-gedicht.jpg)
+![](4.2_dichter-gedicht.jpg)
 
 Een gedicht dat eenmaal door een bepaalde dichter is geschreven kan later niet door een andere dichter zijn geschreven. Er moeten maatregelen genomen worden zodat dit niet aangepast kan worden. De relatie van gediacht naar dichter is dus niet overdraagbaar. De relatie van dichter naar gedicht is wel overdraagbaar omdat de dichter meerdere gedichten heeft geschreven en hij dus het ene gedicht kan uitwisselen met het andere. Merk ook op dat de relatie van dichter naar gedicht aan de "meer"-kant van de kardinaliteit zit.
 
-![](4.2%20leerling-klas.jpg)
+![](4.2_leerling-klas.jpg)
 
 De relaties hierboven zijn beiden overdraagbaar want een leerling kan achteraf naar een andere klas worden overgeplaatst.
 
@@ -288,13 +288,13 @@ Maak steeds twee Erdish zinnen over de relaties tussen de twee entiteiten.
 1. Schrijf de Erdisch zinnen op bij onderstaande relaties in het ERD. Let op de richting van de relaties!
 2. Er staan een paar relaties tussen, die in werkelijkheid niet kloppen. Schrijf achter iedere zin of de relatie kan of niet kan.
 
-![](4.4.2%20opg%201.jpg)
+![](4.4.2_opg_1.jpg)
 
-![](4.4.2%20opg%202.jpg)
+![](4.4.2_opg_2.jpg)
 
-![](4.4.2%20opg%203.jpg)
+![](4.4.2_opg_3.jpg)
 
-![](4.4.2%20opg%204.jpg)
+![](4.4.2_opg_4.jpg)
 
 **Opdracht 4.4.3 ERD tekenen**
 Teken ERD's bij de volgende relaties.
@@ -356,11 +356,11 @@ Wanneer je een ERD maakt, kom je vaak meer-meer relaties tegen. Dat zijn relatie
 
 *Voorbeeld*
 
-![](5.2%20bedrijf_evenement.jpg)
+![](5.2_bedrijf_evenement.jpg)
 
 *Oplossing*
 
-![](5.2%20bedrijf_evenement_oplossing.jpg)
+![](5.2_bedrijf_evenement_oplossing.jpg)
 
 
 Je ziet dat de meer-meer relatie nu is verdwenen. De lijnen zijn doorgetrokken. Dat betekent dat de UID van BEDRIJF_EVENEMENT een combinatie is van bedrijf_id en evenement_id. De intersection entiteit moet je zien als een soort kaartje. Op ieder kaartje staat een combinatie van een evenement en een bedrijf. Soms, zoals hier, kun je ook nog andere attributen aan de intersection entiteit toevoegen.
@@ -373,34 +373,34 @@ Maak een matrix bij de volgende entiteiten: garagebedrijf, auto, persoon
 **Opdracht 5.3.2**
 Verbeter het volgende ERD:
 
-![](5.3.2%20schoolgebouw.jpg)
+![](5.3.2_schoolgebouw.jpg)
 
 **Opdracht 5.3.3**
 Verbeter het volgende ERD, die gaat over een busmaatschappij waarbij de passagiers vooraf via internet een bepaalde lange afstands bus moeten boeken:
 
-![](5.3.3%20bus.jpg)
+![](5.3.3_bus.jpg)
 
 **Opdracht 5.3.4**
 Verbeter het volgende ERD:
 
-![](5.3.4%20tandenborstel.jpg)
+![](5.3.4_tandenborstel.jpg)
 
 **Opdracht 5.3.5**
 Verbeter het  volgende ERD:
 
-![](5.3.5%20rondewinnaar.jpg)
+![](5.3.5_rondewinnaar.jpg)
 
 **Opdracht 5.3.6**
 Los de volgende meer-meer relatie op:
 
-![](5.3.6%20tvshow_persoon.jpg)
+![](5.3.6_tvshow_persoon.jpg)
 
 # 6. Van ERD naar SQL-DDL
 Een genormaliseerde ERD is het resultaat van fase 2 van het ontwerpen van een informatiesysteem. Het is dan tijd om fase 3, het fysieke ontwerp in te gaan. In deze fase ga je de tabellen en de relaties tussen deze tabellen daadwerkelijk in SQL-code omzetten.
 
 Bekijk de onderstaande ERD.
 
-![](6.1%20elo%201.jpg)
+![](6.1_elo_1.jpg)
 
 **Is deze ERD daadwerkelijk in 1e, 2e en 3e normaalvorm? **
 
@@ -478,7 +478,7 @@ Maak de `CREATE TABLE` definities voor de relaties `volgt`, `vak` en `opdracht` 
 **Opdracht 6.3.2**
 Bekijk de volgende ERD.
 
-![](6.3.2%20opdracht.jpg)
+![](6.3.2_opdracht.jpg)
 
 Opmerkingen:
 - Type, merk, naam en producent zijn korte stukjes tekst als "Gazelle", "City Explorer", "Terrain beast"
