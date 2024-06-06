@@ -1,8 +1,6 @@
 Databases en SQL
 ===
 
-[TOC]
-
 In deze module ga je leren hoe je informatie gestructureerd opslaat in _databases_. Je leert een deel van de databasetaal *SQL* _(Structured Query Language)_ . Ook leer je hoe we een *relationele database* structuur ontwerpen . Tenslotte krijg je een beeld van andere soorten databases, samengevat onder de noemen 'noSQL'.
 
 # 0. Inleveropdrachten

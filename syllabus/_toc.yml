@@ -1,0 +1,11 @@
+# Inhoudsopgave
+# Alle pagina's van de syllabus moeten hier in staan!
+# https://jupyterbook.org/structure/toc.html
+
+format: jb-book
+root: index
+options:
+  numbered: false
+chapters:
+- file: databases-and-sql
+- file: sql-inleveropdracht
