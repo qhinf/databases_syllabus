@@ -322,82 +322,39 @@ Het komt vaak voor dat een ERD uit meer dan twee entiteiten zal bestaan. In de a
 | **BEZIENSWAARDIGHEID** | wordt bezocht  | ligt in | x                  | wordt betaald met |
 | **BETAALMIDDEL**       | wordt gebruikt | x       | wordt gebruikt     | x                 |
 
-## 5.2 Normalisatie
-Nadat je alle entiteiten, attributen en relaties bepaald hebt, is er een grote kans dat je onvolkomenheden in je ERD hebt zitten. Om deze onvolkomenheden te vinden en eruit te halen ga je de entiteiten en attributen _normaliseren_. De Amerikaanse informatica Ted Codd heeft in jaren '70 van de vorige eeuw een aantal regels opgesteld hoe je kan normaliseren. We gaan hier de drie belangrijkste normaliserings regels behandelen. Deze regels helpen je om stapsgewijs belangrijke fouten in je ontwerp te ontdekken.
 
-### Eerste normaalvorm
-Een entiteit is in de eerste normaalvorm als de attributen niet meer dan één waarde kunnen hebben en de attributen zelf ook maar één keer voorkomen.
+Nadat je alle entiteiten, attributen en relaties bepaald hebt, is er een grote
+kans dat je onvolkomenheden in je ERD hebt zitten. De theorie die hierachter zit heet 'normalisatie'.
+Dat is een heel technische term, in dit hoofdstuk bespreken we wat de concrete problemen zijn en oplossingen welke zijn daarbij horen.
 
-Voorbeeld:
+## Probleem 1: Redundantie, meer van hetzelfde
 
-![](5.2%201nv_ent_product.jpg)
+Bekijk de volgende tabel
 
-Hier lijkt niets mee aan de hand te zijn totdat je in de analyse een proeftabel laat invullen door de opdrachtgever. Deze vult dan bijvoorbeeld onderstaande tabel in:
+| leerling nummer | voornaam | vak | dag | tijd | lokaal | docent |
+| -------------------| -------- | -------- | -------- | -------- | -------- | -------- |
+| 174 | Robin | informatica | maandag | 8:30 | 42 | Pieter |
+| 175 | Isa | informatica | maandag | 8:30 | 42 | Pieter |
+| 176 | Jamie | informatica | maandag | 8:30 | 42 | Pieter |
+| 174 | Robin | filosofie | maandag | 9:30 | 33 | Merijn |
+| 176 | Isa | filosofie | maandag | 9:30 | 33 | Merijn |
 
-**Product**
+Wat valt er op? Er staat veel dubbele informatie in. Dat noemen we 'redundantie'.
+Het is onduidelijk wat de _entiteit_ hier is, het zijn er feitelijk meerdere door elkaar.
 
-| Product_id | Kleur                  | Prijs  |
-| ---------- | ---------------------- | ------ |
-| 1          | rood of groen of blauw | €7,99  |
-| 2          | geel                   | €12,99 |
-| 3          | groen                  | €5,49  |
-| 4          | rood of blauw          | €24,99 |
-| 5          | rood                   | €14,99 |
+Als je een model maakt en je merkt dat je gegevens vaak terug ziet komen, dan betekent dat meestal dat je een entiteit moet opbreken.
 
-Blijkbaar kan een product met hetzelfde ``product_id`` meerdere kleuren hebben. Dit is op meerdere manieren op te losse: je kunt het product met een andere kleur een andere product_id geven of je maakt een aparte entiteit PRODUCT_KLEUR. De laatste oplossing zie je hieronder. De UID van product is nu een combinatie van product_id en kleur. De doorgetrokken lijn geeft dit aan.
+Als de tabel hierboven een schoolrooster voorstelt dan zou het model moeten bestaan uit meerdere entiteiten:
 
-![](5.2%20product_productkleur.jpg)
+* Leerling, met leerling nummer, naam en andere nodige gegevens
+* Vak, met de naam van de vakken en een relatie met de bijhorende docenten
+* Docent, met naam en andere gegevens per docent
+* Rooster dat alles aan elkaar koppelt.
 
-Hieronder staat een voorbeeld van de tabellen die hieruit voortvloeien.
+We gaan in de klas oefenen met het maken van een model voor klassen, vakken, docenten en uiteindelijk rooster.
 
-**Product**
-
-| Product_id | Prijs   | Kleur |
-| ---------- | ------- | ----- |
-| 1          | €7,99   | rood  |
-| 2          | €7,99   | groen |
-| 3          | €7,99   | blauw |
-| 4          | €12,99  | geel  |
-| 5          | €5,49   | groen |
-| 6          | €24,99  | rood  |
-| 7          | € 24,99 | blauw |
-| 8          | €14,99  | rood  |
-
-**Product_kleur**
-
-| Kleur |
-| ----- |
-| rood  |
-| geel  |
-| groen |
-| blauw |
-
-Je ziet dat bij de bouwen van de database de relatie wordt omgezet in een extra kolom in de tabel ``product``. Kleur kun je hier kiezen uit een rijtje dat je in de tabel van ``product_kleur`` hebt ingevoerd.
-
-### Tweede en derde normaalvorm
-De tweede en derde normaalvorm houden samen in dat iedere attribuut afhankelijk moet zijn van de gehele UID en alleen van de UID. Er mogen dus geen onderlinge afhankelijkheden zijn van andere attributen.
-
-*Voorbeeld 1*
-
-![](5.2%20DVD.jpg)
-
-In deze entiteit zijn winkelnaam en winkeladres onderling afhankelijk terwijl zij niet tot de UID behoren. Dat mag niet. Verder zou dezelfde winkelnaam op heel veel rijen voorkomen. Als de winkelnaam zou veranderen zou je dat op heel veel plekken moeten aanpassen. Met het risico dat de aanpassingen niet volledig of correct gebeuren. De oplossing hiervoor is een aparte entiteit WINKEL.
-
-![](5.2%20DVD_winkel.jpg)
-
-
-*Voorbeeld 2*
-
-![](5.2%20product_leverancier.jpg)
-
-De entiteit PRODUCT_LEVERANCIER heeft de combinatie van kvknr (Kamer van Koophandel nummer) en productnr als UID. Het probleem is dat leverancier_naam alleen van kvknr afhangt en dus niet van de hele UID. Stel dat een leverancier vijf verschillende producten verkoopt en dat op een gegeven moment de leverancier van naam verandert. Dan moet op vijf verschillende plaatsen de naam van de leverancier aangepast worden. Dat is overbodig werk en foutgevoelig. Zorg er daarom voor dat dezelfde naam nooit meer dan één keer opgeslagen hoeft te worden in een database. In deze normaalvorm zorg je er dus voor dat je *redundantie* in je model verwijderd. De oplossing voor voorbeeld 2: maak twee entiteiten: LEVERANCIER en PRODUCT.
-
-![](5.2%20leverancier_product.jpg)
-
-Merk op dat hier een doorgetrokken lijn staat. De UID van PRODUCT is een combinatie van leverancier_id en product_nr. De eigenschap aankoopprijs is van beide afhankelijk.
-
-### Meer-meer relaties 
-Wanneer je een ERD maakt, kom je vaak meer-meer relaties tegen. Dat zijn relaties waarbij de kardinaliteit in beide richtingen van de relatie het sleutelwoord 'meer' bevat. Relationele databases kunnen hier niet mee omgaan. De oplossing is het maken van een _intersection entiteit_; een tussenentiteit.
+## Probleem 2: Meer-meer relaties 
+Wanneer je een ERD maakt, kom je vaak meer-meer relaties tegen. Dat zijn relaties waarbij de kardinaliteit in beide richtingen van de relatie het sleutelwoord 'meer' bevat. Relationele databases kunnen hier niet mee omgaan. De oplossing is het maken van een een tussenentiteit, in de database wordt dat een 'koppeltabel'.
 
 *Voorbeeld*
 
@@ -416,22 +373,22 @@ Je ziet dat de meer-meer relatie nu is verdwenen. De lijnen zijn doorgetrokken. 
 Maak een matrix bij de volgende entiteiten: garagebedrijf, auto, persoon
 
 **Opdracht 5.3.2**
-Normaliseer het volgende ERD:
+Verbeter het volgende ERD:
 
 ![](5.3.2%20schoolgebouw.jpg)
 
 **Opdracht 5.3.3**
-Normaliseer de volgende ERD, die gaat over een busmaatschappij waarbij de passagiers vooraf via internet een bepaalde lange afstands bus moeten boeken:
+Verbeter het volgende ERD, die gaat over een busmaatschappij waarbij de passagiers vooraf via internet een bepaalde lange afstands bus moeten boeken:
 
 ![](5.3.3%20bus.jpg)
 
 **Opdracht 5.3.4**
-Normaliseer de volgende ERD:
+Verbeter het volgende ERD:
 
 ![](5.3.4%20tandenborstel.jpg)
 
 **Opdracht 5.3.5**
-Normaliseer de volgende ERD:
+Verbeter het  volgende ERD:
 
 ![](5.3.5%20rondewinnaar.jpg)
 
@@ -541,108 +498,74 @@ c) Zet dit relationele model om naar een database specificatie in SQL.
 
 
 # 7. Eindopdracht
-(bijgewerkt 2022-10-20)
-- Maak een keuze of je met de casus van 7.1, 7.2 of 7.3 wil werken.
+
+Bijgewerkt op 2023-10-05:
+
+> LET OP: in 2023-2024 is dit aangepast, mocht je de module eerder gedaan hebben en verder willen gaan met iets waar je toen al aan begonnen was, neem even contact op met de docent.
+
+## 7.1 Beoordelingscriteria
+
 - Je werkt **alleen**. Samenwerken is niet toegestaan. Ieder levert een unieke uitwerking in.
 - Je levert al je werk op in een leesbaar en gestructureerd document, zodat het geen zoekplaatje voor je docent wordt.
 - ERD-diagrammen mag je met potlood tekenen en scannen/fotograferen: zolang het maar leesbaar is.
-- Je _mag_ de ERD diagrammen ook maken met yEd of https://draw.io/ .
+- Je mag de ERD diagrammen ook maken met yEd of https://draw.io/ .
 
-Bijgewerkt op 2022-10-20 en 2022-10-29:
+Van je gekozen casus werk je het volgende uit.
+Er zijn 20 punten te verdienen en twee bonuspunten voor een uitwerking in SQL-DDL voor een model.
 
-Van je gekozen casus werk je het volgende uit:
-
-1. De ERD-ish zinnen
-2. Het entiteit-relatie-diagram (ERD)
-    - In het ERD zitten geen "problemen"; dus geen dubbel opgeslagen gegevens en geen meer-meer relaties
-3. Een "fysiek" relationeel model van je casus:
+1. De ERD-ish zinnen (7 punten)
+2. Het entiteit-relatie-diagram (ERD)  (8 punten)
+    - In het ERD zitten geen "problemen", dus geen dubbel opgeslagen gegevens en geen meer-meer relaties
+3. Een "fysiek" relationeel model van je casus: (5 punten)
 	- welke tabellen zijn er (elke entiteit heeft een tabel)
 	- welke kolommen heeft elke tabel
+	- wat is het type (tekst, getal, datum, ...) van elke kolom
 	- welke keys (primariy keys / foreign keys) heeft de tabel
-4. (Optioneel) Een SQL-DDL van je casus
+4. (Optioneel) Een SQL-DDL van je casus (2 bonuspunten)
    - Dit zijn CREATE queries in SQL.
-   - Dit mag je doen; en je kunt er alleen bonuspunten mee scoren.
+   - Dit _mag_ je doen; je kunt er alleen bonuspunten mee scoren.
 
-Zet deze onderdelen in een leesbaar en gestructureerd Word-document. Gestructureerd wil zeggen dat je netjes hoofden, inhoudsopgave en paginanummers gebruikt.
+De maximale score is een 10, ook met de theoretische 22 punten.
+
+Zet deze onderdelen in een leesbaar en gestructureerd document. Gestructureerd wil zeggen dat je netjes hoofden, inhoudsopgave en paginanummers gebruikt.
 
 Bij het nakijken zal ik letten op:
 - De vorm van je ERD-ish zinnen (zie voor de vorm van deze zinnen hoofdstuk 4)
 - ERD: opgeloste meer-meer relaties, primaire sleutels, verplichte/optionele attributen, kraaienpoot-notatie, naamgeving, attribuut-eigenschappen,de lijnen en of het overzichtelijk is weergegeven.
-- "Fysiek" model: komt elke entiteit uit je ERD voor in je logisch model als tabel, de sleutels, zijn de attributen zinnig
-- Als je een SQL script meelevert: is het correcte syntax (ik ga het misschien gewoon wel uitproberen)
+- "Fysiek" model: komt elke entiteit uit je ERD voor in je logisch model als tabel, de sleutels, zijn de attributen zinnig.
+- Als je een SQL script meelevert: is het correcte syntax (ik ga het misschien gewoon wel uitproberen!) Dit levert alleen bonuspunten op.
+
+## 7.2 Hoe ga je te werk
+
+1. Bedenk eerst wat de entiteiten zijn. Bij een spel zijn dat bijvoorbeeld spelers, (npc) karakters, ruimtes of iets op het bord, kaartjes met effecten, ...
+2. Bedenk welke relatie de entiteiten tot elkaar hebben en beschrijf de relaties in ERDish-zinnen
+3. Werk de relaties uit in een ERD diagram
+4. Bedenk dan welke eigenschappen elke entiteit heeft
+5. Werk de eigenschappen uit in een tabel van attributen en typen, geef een eventuele waardebeperking aan.
+
+## 7.3 Voorbeelden van casussen
+### Q-highschool
+
+De q-highschool heeft een database nodig voor de volgende gegevens:
+- Er zijn diverse parcoursen bij Q-highschool.
+- De parcoursen bestaan uit modules.
+- Leerlingen kunnen zijn ingescheven bij parcoursen en voor modules.
+- Modules kunnen worden gegeven in verschillende blokken, sommige modules meerdere keren per schooljaar.
 
 
+### Een spel
 
-## 7.1 Casus Fietsverhuur
-Ik ben de eigenaar van een klein fietsenverhuurbedrijf. We kunnen meer dan 3000 fietsen
-uitlenen. Iedere fiets heeft een eigen identificatienummer groot op het spatbord of frame
-ingegraveerd. Verder noteren we het framenummer in verband met mogelijke diefstal. We
-lenen stadsfietsen uit maar ook racefietsen en mountainbikes enzovoort. Van veel van
-deze soorten fietsen hebben we ook een e-bike uitvoering. Verder hebben we een herenen een damesmodel van de meeste fietsen. Van ieder model hebben we diverse
-wielmaten staan waaronder ook kindermaten. De maten lopen van 12 inch tot en met 60
-inch. Zo is er voor iedereen wat.
+We gaan een online bordspel maken, je mag hier je eigen favoriete spel voor in de plaats zetten uiteraard!
+Bijvoorbeeld ganzenbord:
 
-We kopen onze fietsen bij verschillende leveranciers. Van iedere leverancier noteren we
-zijn bedrijfsnaam, kamer van koophandel nummer, woonplaats, adres en telefoonnummer.
+Wat wil je hiervoor opslaan?
+- Ganzenbord heeft een bord met velden.
+- Een veld kan een actie of betekenis hebben (stappen terug moeten doen, beurt overslaan, ...)
+- Het spel heeft twee of meer spelers
+- Het spel werkt in rondes, misschien wil je de huidige status van het spel vastleggen of juist het verloop in rondes?
 
-Ja, van vele fietsen hebben we meerdere exemplaren staan. Vooral van de meest
-verhuurde fietsen.
 
-De eigenaar van de fietsenverhuur heeft nog meer wensen. Hij wil ook kunnen bijhouden
-welke fiets door welke klant gehuurd is. Van zijn klanten vraagt hij naam, woonplaats,
-adres, mobiel telefoonnummer en nummer van een identiteitsbewijs. Dat kan de
-identiteitskaart, paspoort of rijbewijs zijn. Soms noteert hij ook bijzonderheden. Een klant
-kan op zijn naam ook meerdere fietsen huren.
+# Appendix: Versie historie van deze syllabus
+Hoofdstukken 2 t/m 5 zijn afkomstig van de cursus Databasedesign van het SLO, geschreven door Eelco Dijkstra. Hoofdstuk 6 maakt gebruik van het materiaal van Heer deBeer.
 
-Verder noteert hij van iedere fiets de fabrikant, merk, serie en collectiejaar. Een fabrikant
-kan meerdere merken produceren. Hij noteert ook het land, telefoonnummer , e-mail en de
-website van de fabrikant. De leveranciers kopen hun fietsen bij de fabrikanten in.
-
-## 7.2 Casus De snackbar
-“Ik ben de eigenaar van een snackbar. We verkopen heel veel soorten snacks. Sommige werknemers
-werken achter de balie en nemen bestellingen op. Een bestelling kan uit één of meer snacks
-bestaan.”
-
-“Ik wil graag weten wie van mijn werknemers het hardste werkt; wie neemt de meeste bestellingen
-op? Ik wil weten wat de drukste tijden op een dag zijn en wat de drukste dagen in de week zijn. Ik
-wil ook weten welke snacks het meest populair zijn. Ik heb verschillende soorten werknemers maar
-van allemaal moet ik de voornaam, achternaam, adres, stad, postcode, leeftijd en telefoonnummer
-weten.”
-
-“Oh ja, iedere werknemer krijgt een salaris. Verder moet ik een aantal dingen weten die afhangen
-van de taak van de werknemer:
-- Een kok heeft normaal gesproken op één of andere manier ervaring opgedaan: kokschool,
-zelfstudie, stage etc. Ik wil dat vastleggen.
-- De bestelling-opnemer krijgt overuren betaald bovenop het normale salaris. Daarom wil ik
-vastleggen hoeveel hij per uur krijgt voor overuren.
-- De manager is verantwoordelijk voor de supervisie over alle werknemers, heeft een budget
-voor uitgaven en een streef-omzet voor het restaurant waar hij/zij de leiding van heeft.
-
-Wanneer we groeien, zou ik andere soorten werknemers kunnen aannemen, maar ik weet op dit
-moment niet zeker wat voor soort werknemers dat zouden kunnen zijn.”
-
-“Wanneer een klant een bestelling plaatst bij een opnemer dan is die opnemer verantwoordelijk
-voor het verloop van die bestelling: zorgen dat de kok hem krijgt, het uitleveren en de betaling in
-ontvangst nemen. Als een klant veranderingen wil of vragen heeft over de bestelling dan moet
-hij/zij bij de persoon zijn bij wie hij/zij de bestelling geplaatst heeft. De opnemer kan niet iemand
-anders vragen om dat over te nemen.”
-
-“Je vroeg wat voor een soort dingen er in een bestelling voor kunnen komen? Dat zijn altijd allerlei
-soorten snacks. Alle snacks hebben een naam, een omschrijving en een prijs. Veel klanten hebben
-een klantenkaart. Met deze kaart krijgt de klant korting in de snackbar. We hebben dan wel meer
-informatie over de klant zoals zijn naam en zijn adres. Daarmee kunnen we de klant reclame
-toesturen en kortingsbonnen. Een ander voordeel is dat we nu bij kunnen houden welke snacks de
-klant vaak bestelt. Wanneer een klant de kaart gebruikt, kunnen we bijhouden welke bestellingen
-hij/zij met die kaart gedaan heeft. Iedere klant kan slechts één klantenkaart hebben en iedere klantenkaart kan maar bij één klant horen.”
-
-“Iedere werknemer hoort bij een ploeg. Momenteel hebben we een ochtendploeg en een
-middagploeg maar we overwegen ook een vooravondploeg. Momenteel gebruiken we een
-inschrijfformulier voor iedere ploeg maar dat raakt steeds kwijt en dan is het moeilijk voor mij om
-te achterhalen hoeveel iedereen gewerkt heeft. Enkele werknemers werken maar in één ploeg. Er 
-zijn ook werknemers die in opeenvolgende ploegen werken. Het helpt me om te zien welke
-werknemers teveel en welke meer zouden kunnen werken. Daarom wil ik bijhouden wie dubbele
-ploegendienst draait, wie te weinig ploegendienst doet enz. Wanneer er een probleem is met een
-ploeg wil ik meteen weten welke werknemers er op dat moment werkten.”
-
-## 7.3 Eigen casus?
-Je mag een eigen casus uitwerken. Stem je plan en de inhoud van tevoren af met de docent.
+In 2023 is deze syllabus verder aangepast door docent Merijn Vogel.
