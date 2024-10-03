@@ -1,7 +1,7 @@
 Databases en SQL
 ===
 
-In deze module ga je leren hoe je informatie gestructureerd opslaat in _databases_. Je leert een deel van de databasetaal *SQL* _(Structured Query Language)_ . Ook leer je hoe we een *relationele database* structuur ontwerpen . Tenslotte krijg je een beeld van andere soorten databases, samengevat onder de noemen 'noSQL'.
+In deze module ga je leren hoe je informatie gestructureerd opslaat in _databases_. Je leert een deel van de databasetaal *SQL* _(Structured Query Language)_ . Ook leer je hoe we een *relationele database* structuur ontwerpen . Tenslotte krijg je een beeld van andere soorten databases, samengevat onder de noemer 'noSQL'.
 
 # 0. Inleveropdrachten
 
@@ -52,18 +52,8 @@ Voordat we gaan kijken hoe een relationele database tot stand komt, gaan we eers
 
 Met SQL kun je zowel vragen stellen aan een database over de gegevens die er in zitten, maar ook het bewerken van informatie en de structuur van de database werkt via SQL. In dit hoofdstuk ga je leren *queries* (vragen) in SQL te schrijven.
 
-## Opdracht 2.1
-Deze opdracht duurt ongeveer 1 les.
-
-1. Ga naar de website [W3 Schools - SQL Tutorial](https://www.w3schools.com/sql/).
-2. Doorloop de tutorial van **SQL Intro** helemaal tot en met **SQL Self Join**
-3. *Optioneel:* Wanneer je deze tutorials hebt doorlopen, kun je extra oefenen met [dit materiaal](https://www.w3schools.com/sql/sql_exercises.asp) van W3Schools
-4. Wanneer je er klaar voor bent, doe dan de [SQL-Quiz](https://www.w3schools.com/sql/sql_quiz.asp) van W3 Schools. Laat je score weten aan de docent.
-
-## Opdracht 2.2
-Met deze opdracht ben je minimaal 3 lessen bezig.
-
-De [uitleg en inhoud van deze opdracht staan hier](sql-inleveropdracht.md) 
+De *inleveropdracht* en kennismaking met en lesmateriaal over relationele databases met SQL vind je op
+[deze speciale website](https://sql.merijn.xyz). Gemaakt door docent Merijn.
 
 # 3. Een informatiesysteem ontwerpen
 
@@ -497,9 +487,9 @@ c) Zet dit relationele model om naar een database specificatie in SQL.
 
 # 7. Eindopdracht
 
-Bijgewerkt op 2023-10-05:
+Bijgewerkt op 2024-10-03:
 
-> LET OP: in 2023-2024 is dit aangepast, mocht je de module eerder gedaan hebben en verder willen gaan met iets waar je toen al aan begonnen was, neem even contact op met de docent.
+> LET OP: in 2024-2025 is dit aangepast, mocht je de module eerder gedaan hebben en verder willen gaan met iets waar je toen al aan begonnen was, neem even contact op met de docent.
 
 ## 7.1 Beoordelingscriteria
 
@@ -542,25 +532,16 @@ Bij het nakijken zal ik letten op:
 5. Werk de eigenschappen uit in een tabel van attributen en typen, geef een eventuele waardebeperking aan.
 
 ## 7.3 Voorbeelden van casussen
-### Q-highschool
 
-De q-highschool heeft een database nodig voor de volgende gegevens:
-- Er zijn diverse parcoursen bij Q-highschool.
-- De parcoursen bestaan uit modules.
-- Leerlingen kunnen zijn ingescheven bij parcoursen en voor modules.
-- Modules kunnen worden gegeven in verschillende blokken, sommige modules meerdere keren per schooljaar.
+Het thema voor dit blok is dieren. Je mag zelf een casus bedenken, je mag ook onderstaand verhaal gebruiken voor je database-ontwerp.
 
 
-### Een spel
+### Dierentuin
 
-We gaan een online bordspel maken, je mag hier je eigen favoriete spel voor in de plaats zetten uiteraard!
-Bijvoorbeeld ganzenbord:
+In onze dierentuin leven verschillende diersoorten. Ze leven in mooie verblijven, waar bezoekers ze kunnen bekijken. Sommige diersoorten mogen bij elkaar in een verblijf, andere soorten kunnen we beter gescheiden houden (anders houden we minder dieren over, zegmaar). De dieren hebben uiteraard voer nodig, dat per diersoort kan verschillen. En ze worden verzorgd door onze heel aardige verzorgers.
 
-Wat wil je hiervoor opslaan?
-- Ganzenbord heeft een bord met velden.
-- Een veld kan een actie of betekenis hebben (stappen terug moeten doen, beurt overslaan, ...)
-- Het spel heeft twee of meer spelers
-- Het spel werkt in rondes, misschien wil je de huidige status van het spel vastleggen of juist het verloop in rondes?
+Hiervoor hebben we een informatiesysteem nodig; niet voor de verzorgers / personeel; daar hebben we al een systeem voor. We willen een systeem hebben dat alle dieren in kaart brengt.
+
 
 
 # Appendix: Versie historie van deze syllabus
