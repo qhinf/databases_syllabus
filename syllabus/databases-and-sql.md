@@ -6,16 +6,12 @@ Databases en SQL
 - Deadline voor het inleveren van de eindopdrachten: **{{ deadline }}**
 - Deadline voor het aanvragen van uitstel: **{{ deadline_uitstel_aanvragen }}**
 - Uitgestelde deadline: **{{ deadline_uitstel }}**
-
+- Inleveren via: https://app.q-highschool.nl/
 
 ## Let op:
 
 Deze syllabus wordt opnieuw gemaakt tijdens blok 1 van 2025-2026.
 Deze wordt dus nog aangevuld met de tweede eindopdracht.
-
-
-Oudere versie: [[databases-en-sql-old.md]]
-
 
 Inhoudsopgave:
 
@@ -29,10 +25,6 @@ Welkom bij een informaticamodule van de Q-highschool!
 Deze module werkt met TWEE inleveropdrachten, die voor 10 oktober 16.00uur
 moeten zijn ingeleverd.
 
-## Deadline
-- Laatste week van het "blok" (bij een vier-blokken-per-jaar rooster). De
-docent vertelt je de deadline voor het blok bij elke les. Eerder inleveren mag.
-- Inleveren via: https://app.q-highschool.nl/
 
 ## Zelfstandig werken en bronnen vermelden
 De volgende uitgangspunten gelden voor deze module:
