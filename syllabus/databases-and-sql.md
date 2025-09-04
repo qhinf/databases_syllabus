@@ -226,7 +226,6 @@ Dit is door de docent gemaakt. De score is lineair: hoe meer vragen je goed hebt
 # Eindopdracht 2: Een databasemodel ontwerpen
 
 
-
 # Bug bounty 2025-2026
 
 Je mag Sjaaq proberen tehacken, onder voorwaarden.

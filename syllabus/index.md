@@ -11,9 +11,7 @@
 
 Deze syllabus wordt opnieuw gemaakt tijdens blok 1 van 2025-2026.
 Deze wordt dus nog aangevuld met alle info en de tweede eindopdracht.
-Wil je vast meer weten, kijk bij de versie van vorig jaar:
-
-Oudere versie: [databases-en-sql-old.md]
+Wil je vast meer weten, kijk bij de versie van vorig jaar (via het menu op de hoofd-site)
 
 ## Wat leer je in deze module
 
