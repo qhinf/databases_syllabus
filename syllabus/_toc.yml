@@ -3,7 +3,7 @@
 # https://jupyterbook.org/structure/toc.html
 
 format: jb-book
-root: databases-and-sql
+root: index.md
 options:
   numbered: false
 chapters:
