@@ -3,10 +3,7 @@
 # https://jupyterbook.org/structure/toc.html
 
 format: jb-book
-root: index
+root: databases-and-sql
 options:
   numbered: false
 chapters:
-- file: databases-and-sql
-- file: databases-and-sql-old
-- file: sql-inleveropdracht
