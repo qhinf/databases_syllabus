@@ -1,4 +1,4 @@
-# Voorbeeldmodule
+# De module Databases en SQL
 
 <!-- Deze regel niet wijzigen! -->
 *Versie {{ versie }}. Jouw docent: {{ docent }} ({{ docent_email }})*
