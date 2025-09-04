@@ -3,9 +3,15 @@ Databases en SQL
 
 *Versie {{ versie }}. Jouw docent: {{ docent }} ({{ docent_email }})*
 
-- Deadline voor het inleveren van de eindopdracht: **{{ deadline }}**
+- Deadline voor het inleveren van de eindopdrachten: **{{ deadline }}**
 - Deadline voor het aanvragen van uitstel: **{{ deadline_uitstel_aanvragen }}**
-  - Uitgestelde deadline: **{{ deadline_uitstel }}**
+- Uitgestelde deadline: **{{ deadline_uitstel }}**
+
+
+## Let op:
+
+Deze syllabus wordt opnieuw gemaakt tijdens blok 1 van 2025-2026.
+Deze wordt dus nog aangevuld met de tweede eindopdracht.
 
 
 Oudere versie: [[databases-en-sql-old.md]]
