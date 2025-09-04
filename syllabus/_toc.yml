@@ -8,4 +8,5 @@ options:
   numbered: false
 chapters:
 - file: databases-and-sql
+- file: databases-and-sql-old
 - file: sql-inleveropdracht
