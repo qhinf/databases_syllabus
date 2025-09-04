@@ -25,10 +25,6 @@ Aan het eind van deze module:
 - Weet je dat er meer soorten database zijn dan alleen relationele databases (NoSQL)
 - En bonus: we praten ook even over databases en regels
 
-- Deadline voor het inleveren van de eindopdracht: **{{ deadline }}**
-- Deadline voor het aanvragen van uitstel: **{{ deadline_uitstel_aanvragen }}**
-  - Uitgestelde deadline: **{{ deadline_uitstel }}**
-
 Inhoudsopgave:
 
 ```{tableofcontents}
