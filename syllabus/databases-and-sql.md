@@ -259,7 +259,7 @@ Deze heeft ook een primary key.
 Nu willen we graag docenten en parcoursen aan elkaar koppelen.
 Voor het gemak gaan we ervanuit dat elke docent maar 1 module kan geven. We kunnen dan de tabel van docenten uitbreiden:
 
-| Docent | | |
+| Docent |    |            |     |
 |----|--------|------------|-----|
 | *id* | *voornaam*   | *achternaam* | *parcours_id* |
 |----|--------|------------|--------|
