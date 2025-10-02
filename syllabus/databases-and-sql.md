@@ -214,7 +214,7 @@ het systeem waar je queries kunt uitvoeren en maken. Dat systeem slaat je antwoo
 
 Deze module gaat over _relationele_ databases. Dat betekent dat tabellen in een database een relatie kunnen hebben met andere tabellen.
 
-> `¯\_(ツ)_/¯` Het database systeem _postgres_ noemt een _tabel_ een _relation_, dus als je een fout maakt zie je soms 'relation ... does not exist' of zoiets; dan bedoelt postgres een relatie. Naar _mijn_ mening is dat incorrect gebruik van de term
+> `¯\_(ツ)_/¯` Het database systeem _postgres_ noemt een _tabel_ een _relation_, dus als je een fout maakt zie je soms 'relation ... does not exist' of zoiets; dan bedoelt postgres een tabel. Naar _mijn_ mening is dat incorrect gebruik van de term relatie; dat is iets tussen twee tabellen. Vind ik.
 
 
 ## Sleutels
