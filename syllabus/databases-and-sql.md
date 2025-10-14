@@ -392,13 +392,13 @@ We willen in een ontwerp deze relaties zo precies mogelijk vastleggen.
 
 > Een relatie werkt twee kanten op, dat werkt ook zo bij entiteiten in een database-ontwerp
 
-### Nul, een, meer?? 'kardinaliteit'
+### Nul, een, meer? 'kardinaliteit'
 
-Voor een database-ontwerp is het van belang te weten 'hoveel' van de ene entiteit hoort bij de andere entiteit.
+Voor een database-ontwerp is het van belang te weten 'hoeveel' van de ene entiteit hoort bij de andere entiteit.
 Bij de analyse stellen we vragen, zoals: "Klopt het dat een klant meerdere producten in een winkelmandje kan leggen?"
 en "Klopt het dat een winkelmandje bij precies 1 klant hoort?".
 
->Dit lijken eenvoudige vragen; dit klopt voor zo'n beetje elke online winkel! Er zijn echter vaak zaken waarover we niet precies weten wat het antwoord is. Soms weten we het antwoord niet meteen zoals de vraag: Klopt het dat een patient maximaal 1 infuuspomp tegelijk gebruikt? (Nee, soms zijn er meer medicijnen die onafhankelijk worden toegediend...)
+>Dit lijken eenvoudige vragen; dit klopt voor zo'n beetje elke online winkel! Soms weten we het antwoord niet meteen zoals de vraag: Klopt het dat een patient maximaal 1 infuuspomp tegelijk gebruikt? (Nee, soms zijn er meer medicijnen die onafhankelijk worden toegediend...)
 
 Om deze aantallen vast te leggen zijn er in een database ontwerp precies vier mogelijkheden voor de relaties:
 
@@ -427,7 +427,7 @@ Dit doen we door relaties tussen entiteiten te beschrijven in een precieze struc
 
 - _auto_ en _monteur_:
     - *Iedere* _auto_ wordt onderhouden door **precies een** _monteur_.
-    - *Iedere* _monteur_ onderhoudt **meer dan een** _auto_.
+    - *Iedere* _monteur_ onderhoudt **een of meer** _auto_s.
 
 - _product_ en _klant_
     - *Ieder* _product_ wordt gekocht door **nul of meer** _klanten_.
@@ -448,20 +448,55 @@ En dat de zinnen altijd in paren voorkomen. Als er een relatie is tussen twee en
 - Elke gebruiker heeft een of meer accounts. Elk account hoort bij precies 1 gebruiker.
 
 
-### Entiteitirelatie-diagrammen: een plaatje zegt some meer:
+### Entiteit-relatie-diagrammen, een plaatje zegt meer
 
-De 'kardinaliteit' die we hierboven beschreven met woorden als 'precies 1', '1 of meer' kunnen we uitdrukken in zogenaamde kraaienpoten (de Engelse term
-hiervoor is Crows Feet). Dit is een veelgebruikte en vrij duidelijke manier om in een diagram de relatie te kunnen beschrijven.
+De 'kardinaliteit' die we hierboven beschreven met woorden als 'precies 1', '1 of meer' tekenen we we als zogenaamde kraaienpoten (de Engelse term
+hiervoor is Crows Feet). Dit is een veelgebruikte manier om in een diagram de hoeveelheid (ariteit of kartinaliteit) van een relatie te beschrijven.
 
-Kraaienpoten zien er zo uit (ze staan allevier in de rechterkant):
+Deze kraaienpoten zien er zo uit:
 
-```mermaid
-erDiagram
-    A ||--o| B: elke A .relatie. nul of een B
-    A ||--|| B: elke A .relatie. precies een B
-    A ||--o{ B: elke A .relatie. nul or meer B
-    A ||--|{ B: elke A .relatie. een or meer B
-```
+
+![Plaatje van de vier kraaienpoten](images/crows-feet-enumeration.png)
+
+Een rondje of streep voor de nul of een. Een enkele streep of drie streepjes in de vorm van een 
+vogelpootje voor de 'meer'-variant.
+
+
+### Van ERDish zinnen naar een ERD
+
+We hebben ERDish zinnen gemaakt om de relaties tussen entiteiten te beschrijven. Dit zetten
+we om in een diagram op de volgende manier.
+
+- _auto_ en _monteur_:
+    - *Iedere* _auto_ wordt onderhouden door **precies een** _monteur_.
+    - *Iedere* _monteur_ onderhoudt **meer dan een** _auto_.
+
+![Plaatje van auto monteur ERD](images/erd-voorbeeld-auto-monteur.png)
+
+In dit plaatje:
+- Wordt iedere entiteit getoond als rechthoek met afgeronde hoeken.
+- Zijn attributen opgenomen
+- Staan kraaienpoten
+- Staat de betekenis van de relatie beschreven op de lijn
+
+
+Als er meer entiteiten zijn, dan worden die allemaal ondergebracht in een grote plaat.
+In de volgende sectie zien we daarvan een voorbeeld.
+
+
+## meer-meer: werkt in een ERD maar _niet_ in een relationele database
+
+Soms ontstaat er in een ERD een zogenaamde meer-meer relatie. Dat betekent dat
+in de ERDish zinnen, in beide richtingen de relatie 'meer' bevat.
+
+Bijvoorbeeld de relatie tussen klanten en producten:
+
+
+- _product_ en _klant_
+    - *Ieder* _product_ wordt gekocht door **nul of meer** _klanten_.
+    - *Iedere* _klant_ koopt **een of meer** _producten_.
+
+// TODO: meer uitleg hier...
 
 
 
