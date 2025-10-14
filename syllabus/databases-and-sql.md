@@ -496,8 +496,44 @@ Bijvoorbeeld de relatie tussen klanten en producten:
     - *Ieder* _product_ wordt gekocht door **nul of meer** _klanten_.
     - *Iedere* _klant_ koopt **een of meer** _producten_.
 
-// TODO: meer uitleg hier...
+Hier hoort in eerste instantie het volgende ERD bij:
 
+![Plaatje van klant bestelt product](images/erd-voorbeeld-klant-product-meer-meer.png)
+
+
+Als we dit zouden willen opslaan in twee tabellen dan lukt dat niet goed: als we in de klant
+een product-kolom zouden opnemen, dan kan de klant maar 1 product bestellen. En als we bij product
+een klant zouden willen opnemen, dan kan maar 1 klant dat product bestellen.
+
+Met product bedoelen we bijvoorbeeld 'een zwart T-shirt in maar M', waarvan de winkel er bijvoorbeeld
+honderd heeft liggen.
+
+Een oplossing zou kunnen zijn dat we voor elk individueel ding een rij aanmaken in de database, maar
+dat voelt raar; we gaan dan heel vaak hetzelfde zeggen in de database-tabel alleen maar om dit probleem op te lossen.
+
+Vaak betekent een meer-meer relatie eigenlijk iets op zichzelf en kunnen we een tabel `bestelling` erbij maken. Die kan dan verwijzen naar `klant` en `product`. Nog handiger is het om een vierde entiteit erbij
+te maken, die van de 'bestelregel': wat als ik vier zwarte T-shirts wil bestellen?
+
+De "klassieke" structuur voor klanten die producten kopen wordt dan als volgt:
+
+![Plaatje van klant die bestellingen kan plaatsen](images/erd-voorbeeld-klant-product-meer-meer.png)
+
+Op deze manier heeft is er geen enkele meer-meer relatie. 
+
+> TIP: Maak voor jezelf de ERDish-zinnen bij elke van deze relaties (dus, zes ERDish zinnen).
+Klap daarna de sectie hieronder open om je zinnen te controleren.
+
+<details>
+  <summary>De ERDish-zinnen voor bovenstaand ERD</summary>
+- Iedere _klant_ plaatst *nul of meer* _bestellingen_.
+- Iedere _bestelling_ is geplaatst door *precies een* klant.
+
+- Iedere _bestelling_ omvat *een of meer* _bestelregels_.
+- Iedere _bestelregel_ zit in *precies een* _bestelling_.
+
+- Iedere _bestelregel_ gaat over *precies een* _product_.
+- Ieder _product_ zit in *nul of meer* _bestelregels_.
+</details>
 
 
 # Eindopdracht 1: SQL
@@ -508,9 +544,7 @@ Dit is door de docent gemaakt. De score is lineair: hoe meer vragen je goed hebt
 # Eindopdracht 2: Een databasemodel ontwerpen
 
 
-Als eindopdracht ga je een database-ontwerp maken. Dit doe je als volgt:
-
-// TODO: copy-paste van vorig jaar
+Als eindopdracht ga je een database-ontwerp maken aan de hand van onderstaande casus.
 
 
 ## De casus
@@ -519,11 +553,13 @@ Fantasierijke tuintjes! In een door jou gekozen fantasiewereld zijn tuintjes aan
 door ijverige tuiniers van alle soorten en maten. Ze kweken er magische of anderszins bijzondere planten of groenten; misschien hebben die wel epische of magische eigenschappen!
 Wie beheert welk stukje land? Wanneer moet er worden gezaaid, water worden gegeven of geoogst? En komt er een groot feest als de oogst goed was?
 
-- Verzin tenminste vier en maximaal zes entiteiten. Voor elke entiteit bedenk je wat de attributen zijn.
-- Beschrijf de relaties tussen de entiteiten in ERDish zinnen.
-- Maak een ERD-diagram van deze entiteiten: zorg ervoor dat er geen meer-meer relaties in zitten door koppel-tabellen te maken als dat nodig is.
+- (2 punt) Verzin tenminste vier en maximaal zes entiteiten. Voor elke entiteit bedenk je wat de attributen zijn.
+- (6 punten) Beschrijf de relaties tussen de entiteiten in ERDish zinnen.
+- (7 punten) Maak een ERD-diagram van deze entiteiten: zorg ervoor dat er geen meer-meer relaties in zitten door koppel-tabellen te maken als dat nodig is.
+- (5 punten) Maak voor elke entiteit een voorbeeld-tabel met alle kolommen
 - Bonuspunten: maximaal een punt bonus voor originaliteit in de eigenschappen; cyberpunk, fantasy, discworld, ...
 
+Beoordeling: maximaal 20 punten
 
 
 ## De beoordeling
@@ -534,6 +570,10 @@ Je levert in voor de deadline.
 
 Met elke leering plan ik een kort gesprekje in voor of op de deadline-dag, daarin leg je uit hoe je tot je database-ontwerp bent gekomen.
 
+Het gesprek is er vooral om te checken hoe je tot je resultaat bent gekomen;
+als je niet goed kunt uitleggen hoe je datamodel in elkaar zit, kan dat leiden tot puntenaftrek.
+
+Voor overige zaken rondom eindopdrachten, zie bovenin deze pagina.
 
 
 # Bug bounty 2025-2026
