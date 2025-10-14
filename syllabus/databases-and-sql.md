@@ -18,7 +18,7 @@ Inhoudsopgave:
 ```{tableofcontents}
 ```
 
-# Inleveropdrachten
+# Uitleg over inleveropdrachten
 
 Welkom bij een informaticamodule van de Q-highschool!
 
@@ -379,6 +379,90 @@ Webshops zijn er te over. Bedenk entiteiten waar je aan denkt bij een webshop.
 
 tip: Doe dit eerst zonder er een te bekijken. Daarna bekijk er eens een; komen er meer naar boven?
 
+## Database ontwerp, relaties
+
+Een relationele database draait om de relaties die _entiteiten_ met elkaar kunnen hebben:
+
+- _klant_ koopt _product_ 
+- _auto_ wordt onderhouden door een _monteur_
+- _docent_ doceert een of meer _vakken_
+
+
+We willen in een ontwerp deze relaties zo precies mogelijk vastleggen.
+
+> Een relatie werkt twee kanten op, dat werkt ook zo bij entiteiten in een database-ontwerp
+
+### Nul, een, meer?? 'kardinaliteit'
+
+Voor een database-ontwerp is het van belang te weten 'hoveel' van de ene entiteit hoort bij de andere entiteit.
+Bij de analyse stellen we vragen, zoals: "Klopt het dat een klant meerdere producten in een winkelmandje kan leggen?"
+en "Klopt het dat een winkelmandje bij precies 1 klant hoort?".
+
+>Dit lijken eenvoudige vragen; dit klopt voor zo'n beetje elke online winkel! Er zijn echter vaak zaken waarover we niet precies weten wat het antwoord is. Soms weten we het antwoord niet meteen zoals de vraag: Klopt het dat een patient maximaal 1 infuuspomp tegelijk gebruikt? (Nee, soms zijn er meer medicijnen die onafhankelijk worden toegediend...)
+
+Om deze aantallen vast te leggen zijn er in een database ontwerp precies vier mogelijkheden voor de relaties:
+
+- Nul of 1
+- Precies 1
+- Nul of meer
+- Een of meer
+
+
+Voorbeelden:
+
+- Van een klant weten we nul of 1 e-mailadres
+- Elke regel in een bestelling hoort bij precies 1 bestelling
+- Een product wordt gekocht door nul of meer klanten
+- Elke bestelling omvat een of meer producten
+
+*Maar* dit is maar de helft van het verhaal! Van al deze zaken willen we ook de andere kant van de relatie weten. Bijvoorbeeld:
+
+- Elke bestelling bestaat uit 1 of meer regels, en
+- Klanten kopen een of meer product.
+
+#### ERDish-zinnen
+
+We willen ervoor zorgen dat we structureel alle relaties in de database goed beschrijven.
+Dit doen we door relaties tussen entiteiten te beschrijven in een precieze structuur. Voorbeelden:
+
+- _auto_ en _monteur_:
+    - *Iedere* _auto_ wordt onderhouden door **precies een** _monteur_.
+    - *Iedere* _monteur_ onderhoudt **meer dan een** _auto_.
+
+- _product_ en _klant_
+    - *Ieder* _product_ wordt gekocht door **nul of meer** _klanten_.
+    - *Iedere* _klant_ koopt **een of meer** _producten_.
+
+Aan de voorbeelden kun je zien dat die zinnen altijd dezelfde structuur hebben:
+
+_Iedere_ **entiteit A** __werkwoord__ ..aantal.. **entiteit B**
+
+
+En dat de zinnen altijd in paren voorkomen. Als er een relatie is tussen twee entiteiten, dan moet je beide kanten van de relatie beschrijven.
+
+#### Voorbeelden van ERD-ish zin-paren:
+
+- Een leerling volgt meerdere vakken. Vakken worden gevolgd door meerdere leerlingen.
+- Elke medewerker werkt voor precies 1 afdeling. Voor iedere afdeling werken een of meer medewerkers.
+- Elke klant plaatst nul of meer bestellingen. Iedere bestelling is voor precies een klant.
+- Elke gebruiker heeft een of meer accounts. Elk account hoort bij precies 1 gebruiker.
+
+
+### Entiteitirelatie-diagrammen: een plaatje zegt some meer:
+
+De 'kardinaliteit' die we hierboven beschreven met woorden als 'precies 1', '1 of meer' kunnen we uitdrukken in zogenaamde kraaienpoten (de Engelse term
+hiervoor is Crows Feet). Dit is een veelgebruikte en vrij duidelijke manier om in een diagram de relatie te kunnen beschrijven.
+
+Kraaienpoten zien er zo uit (ze staan allevier in de rechterkant):
+
+```mermaid
+erDiagram
+    A ||--o| B: elke A .relatie. nul of een B
+    A ||--|| B: elke A .relatie. precies een B
+    A ||--o{ B: elke A .relatie. nul or meer B
+    A ||--|{ B: elke A .relatie. een or meer B
+```
+
 
 
 # Eindopdracht 1: SQL
@@ -387,6 +471,34 @@ Veel meer uitleg over SQL en de eerste inleveropdracht vind je op de website: [S
 Dit is door de docent gemaakt. De score is lineair: hoe meer vragen je goed hebt, hoe hoger je deel-cijfer!
 
 # Eindopdracht 2: Een databasemodel ontwerpen
+
+
+Als eindopdracht ga je een database-ontwerp maken. Dit doe je als volgt:
+
+// TODO: copy-paste van vorig jaar
+
+
+## De casus
+
+Fantasierijke tuintjes! In een door jou gekozen fantasiewereld zijn tuintjes aangelegd. Deze worden onderhouden
+door ijverige tuiniers van alle soorten en maten. Ze kweken er magische of anderszins bijzondere planten of groenten; misschien hebben die wel epische of magische eigenschappen!
+Wie beheert welk stukje land? Wanneer moet er worden gezaaid, water worden gegeven of geoogst? En komt er een groot feest als de oogst goed was?
+
+- Verzin tenminste vier en maximaal zes entiteiten. Voor elke entiteit bedenk je wat de attributen zijn.
+- Beschrijf de relaties tussen de entiteiten in ERDish zinnen.
+- Maak een ERD-diagram van deze entiteiten: zorg ervoor dat er geen meer-meer relaties in zitten door koppel-tabellen te maken als dat nodig is.
+- Bonuspunten: maximaal een punt bonus voor originaliteit in de eigenschappen; cyberpunk, fantasy, discworld, ...
+
+
+
+## De beoordeling
+
+De beoordeling gebeurt aan de hand van wat jij inlevert, plus een bespreking van wat je hebt ingeleverd.
+
+Je levert in voor de deadline.
+
+Met elke leering plan ik een kort gesprekje in voor of op de deadline-dag, daarin leg je uit hoe je tot je database-ontwerp bent gekomen.
+
 
 
 # Bug bounty 2025-2026
