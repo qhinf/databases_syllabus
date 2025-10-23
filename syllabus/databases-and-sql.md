@@ -22,9 +22,6 @@ Inhoudsopgave:
 
 Welkom bij een informaticamodule van de Q-highschool!
 
-Deze module werkt met TWEE inleveropdrachten, die voor 10 oktober 16.00uur
-moeten zijn ingeleverd.
-
 
 ## Zelfstandig werken en bronnen vermelden
 De volgende uitgangspunten gelden voor deze module:
@@ -559,26 +556,23 @@ Wie beheert welk stukje land? Wanneer moet er worden gezaaid, water worden gegev
 - (5 punten) Maak voor elke entiteit een voorbeeld-tabel met alle kolommen
 - Bonuspunten: maximaal een punt bonus voor originaliteit in de eigenschappen; cyberpunk, fantasy, discworld, ...
 
-Beoordeling: maximaal 20 punten
+Beoordeling: maximaal 20 punten is een 10; minimum is een 1.
 
 
 ## De beoordeling
 
-De beoordeling gebeurt aan de hand van wat jij inlevert, plus een bespreking van wat je hebt ingeleverd.
+De beoordeling gebeurt aan de hand van wat jij inlevert, en bestaat uit twee delen:
 
-Je levert in voor de deadline.
+- (50% van je cijfer) SQL opdracht in het Sjaaq systeem: https://sql.merijn.xyz Sjaaq
+- (50% van je cijfer) Database ontwerp opdracht
 
-Met elke leering plan ik een kort gesprekje in voor of op de deadline-dag, daarin leg je uit hoe je tot je database-ontwerp bent gekomen.
-
-Het gesprek is er vooral om te checken hoe je tot je resultaat bent gekomen;
-als je niet goed kunt uitleggen hoe je datamodel in elkaar zit, kan dat leiden tot puntenaftrek.
+Je levert in voor de deadline bovenaan deze pagina.
 
 Voor overige zaken rondom eindopdrachten, zie bovenin deze pagina.
 
-
 # Bug bounty 2025-2026
 
-Je mag Sjaaq proberen tehacken, onder voorwaarden.
+Je mag Sjaaq proberen te hacken, onder voorwaarden.
 
 Als je het volgende bereikt, krijg je eeuwige roem (en ik verzin nog een
 prijs). Eeuwige roem betekent dat ik op deze pagina een hall-of-fame
@@ -587,9 +581,7 @@ maak, en daarop meldt wat je hebt gevonden. Je naam mag erbij, hoeft niet.
 
 > Main quest: Als je in Sjaaq queries van een andere student kunt zien of bewerken, of als je de tabellen van de opgaven kunt zien of bewerken, dan heb je Sjaaq gehackt voor de hoofdprijs. 
 
-> Side quest 1: het systeem is zo opgezet dat de inhoud van de leerling databases nooit wijzigt. Als het je lukt om data in jouw database blijvend te wijzigen, dan heb je Sjaaq gehackt voor de tweede prijs. Update oktober 2025: deze is momenteel zo makkelijk dat ik deze in de herfstvakantie ga proberen te dichten.
-
-(Mogelijk komen hier meer side-quests)
+(Mogelijk komen hier side-quests)
 
 ## Let op! Dit is een productie-systeem!
 
