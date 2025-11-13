@@ -52,9 +52,9 @@ sphinx:
     # een volgende editie.
     myst_substitutions:
       versie: "Globaal afgehandeld. Niet wijzigen."
-      deadline: "donderdag 30 oktober 2025"
-      deadline_uitstel_aanvragen: "maandag 22 oktober 2025, 16:00"
-      deadline_uitstel: "donderdag 20 november, 16:00"
+      deadline: "donderdag 15 januari 2026
+      deadline_uitstel_aanvragen: "maandag 5 januari 2026, 16:00"
+      deadline_uitstel: "donderdag 5 februari, 16:00"
       docent: "Merijn Vogel"
       docent_email: "mailto:m.vogel@quadraam.nl"
 
