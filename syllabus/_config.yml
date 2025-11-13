@@ -15,7 +15,7 @@ only_build_toc_files: true
 # https://jupyterbook.org/content/execute.html. Voor syllabi zonder code zet
 # execute_notebooks op "off" (inclusief quotes!)
 execute:
-  execute_notebooks: force
+  execute_notebooks: "off"
 
 # Configuratie voor de MyST Markdown parser, met een aantal handige extensies
 # standaard aangezet. Zie https://myst-parser.readthedocs.io/en/latest/syntax/optional.html
