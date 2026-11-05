@@ -54,25 +54,25 @@ bestaan uit meerdere entiteiten:
 - Docent, met naam en andere gegevens per docent
 - Rooster, dat alles aan elkaar koppelt.
 
-## Probleem 2: meer-meer relaties
+## Probleem 2: meer-meerrelaties
 
 In [](meer_meer_relaties.md) heb je gezien dat een relationele database geen
-meer-meer relaties kan opslaan. De oplossing is een tussen-entiteit, die in de
+meer-meerrelaties kan opslaan. De oplossing is een tussenentiteit, die in de
 database een 'koppeltabel' wordt. Hier is nog een voorbeeld.
 
 *Voorbeeld*
 
-![Bedrijf en evenement met meer-meer relatie](assets/verdieping_ontwerp_verbeteren/bedrijf_evenement.jpg)
+![Bedrijf en evenement met meer-meerrelatie](assets/verdieping_ontwerp_verbeteren/bedrijf_evenement.jpg)
 
 *Oplossing*
 
 ![Bedrijf en evenement met koppel-entiteit](assets/verdieping_ontwerp_verbeteren/bedrijf_evenement_oplossing.jpg)
 
-Je ziet dat de meer-meer relatie nu is verdwenen. De UID van
+Je ziet dat de meer-meerrelatie nu is verdwenen. De UID van
 BEDRIJF_EVENEMENT is een combinatie van bedrijf_id en evenement_id. De
-tussen-entiteit moet je zien als een soort kaartje: op ieder kaartje staat een
+tussenentiteit moet je zien als een soort kaartje: op ieder kaartje staat een
 combinatie van een evenement en een bedrijf. Soms, zoals hier, kun je ook nog
-andere attributen aan de tussen-entiteit toevoegen.
+andere attributen aan de tussenentiteit toevoegen.
 
 ## Opdrachten
 
@@ -118,7 +118,7 @@ Verbeter het volgende ERD:
 :::{exercise}
 :label: verd-verb-tvshow
 
-Los de volgende meer-meer relatie op:
+Los de volgende meer-meerrelatie op:
 
 ![Tv-show en persoon](assets/verdieping_ontwerp_verbeteren/opdracht_tvshow_persoon.jpg)
 :::

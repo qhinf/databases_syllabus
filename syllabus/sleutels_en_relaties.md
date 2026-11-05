@@ -2,12 +2,12 @@
 
 Deze module gaat over _relationele_ databases. Dat betekent dat tabellen in een database een relatie kunnen hebben met andere tabellen.
 
-> `¯\_(ツ)_/¯` Het database systeem _postgres_ noemt een _tabel_ een _relation_, dus als je een fout maakt zie je soms 'relation ... does not exist' of zoiets; dan bedoelt postgres een tabel. Naar _mijn_ mening is dat incorrect gebruik van de term relatie; dat is iets tussen twee tabellen. Vind ik.
+> `¯\_(ツ)_/¯` Het databasesysteem _Postgres_ noemt een _tabel_ een _relation_, dus als je een fout maakt zie je soms 'relation ... does not exist' of zoiets; dan bedoelt Postgres een tabel. Naar _mijn_ mening is dat incorrect gebruik van de term relatie; dat is iets tussen twee tabellen. Vind ik.
 
 ## Sleutels
 
 Elke rij in een tabel is de vastlegging (een record) van een feit, ding, gebeurtenis etc. Dat zou een 'uniek' iets moeten zijn.
-Zouden we leerlingen alleen met voornaam opslaan dan krijgen we al gauw een probleem. Zelfs de combinatie van voor- en achternaam *en* geboortedatum is niet altijd uniek. (De docent heeft een vriend die hier daadwerkelijk last van heeft gehad!). Om die reden is het handig een _technische_ unieke identificatie-kolom te maken. Die noemen we vaak `id`:
+Zouden we leerlingen alleen met voornaam opslaan, dan krijgen we al gauw een probleem. Zelfs de combinatie van voor- en achternaam *en* geboortedatum is niet altijd uniek. (De docent heeft een vriend die hier daadwerkelijk last van heeft gehad!). Om die reden is het handig een _technische_ unieke identificatiekolom te maken. Die noemen we vaak `id`:
 
 ```{table} Docent
 | id | voornaam | achternaam  |
@@ -20,13 +20,13 @@ Zouden we leerlingen alleen met voornaam opslaan dan krijgen we al gauw een prob
 
 Zo'n kolom heet `primary key`, de belangrijkste sleutel, van de tabel. Een tabel kan maximaal 1 primary key hebben.
 
-Bij het aanmaken van een tabel met SQL, vertellen we dit ook aan de database:
+Bij het aanmaken van een tabel met SQL vertellen we dit ook aan de database:
 
 ```sql
 CREATE TABLE Docent (id int PRIMARY KEY, voornaam VARCHAR, achternaam VARCHAR);
 ```
 
-Stel we maken een tweede tabel met parcoursen:
+Stel, we maken een tweede tabel met parcoursen:
 
 ```{table} Parcours
 | id  | naam        |
@@ -40,7 +40,7 @@ Deze heeft ook een primary key.
 ## Relatie
 
 Nu willen we graag docenten en parcoursen aan elkaar koppelen.
-Voor het gemak gaan we ervanuit dat elke docent maar 1 parcours kan geven. We kunnen dan de tabel van docenten uitbreiden:
+Voor het gemak gaan we ervan uit dat elke docent maar 1 parcours kan geven. We kunnen dan de tabel van docenten uitbreiden:
 
 ```{table} Docent
 | id | voornaam | achternaam  | parcours_id |

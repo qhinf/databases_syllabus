@@ -12,10 +12,10 @@
 
 Aan het eind van deze module:
 
-- Weet je wat een database is, specifiek richten we ons op zogenaamde relationele databases
-- Kun je gegevens opzoeken in een database met de vraag-taal SQL
+- Weet je wat een database is; we richten ons specifiek op zogenaamde relationele databases
+- Kun je gegevens opzoeken in een database met de vraagtaal SQL
 - Kun je een eenvoudig datamodel ontwerpen
-- Weet je dat er meer soorten database zijn dan alleen relationele databases (NoSQL)
+- Weet je dat er meer soorten databases zijn dan alleen relationele databases (NoSQL)
 - En bonus: we praten ook even over databases en regels
 
 ## De eindopdrachten
@@ -29,14 +29,14 @@ Er zijn bij deze module twee zaken die je moet inleveren:
 
 De beoordeling gebeurt aan de hand van wat jij inlevert, en bestaat uit twee delen:
 
-- (50% van je cijfer) SQL opdracht in het {{ sjaaq }} systeem
-- (50% van je cijfer) Database ontwerp opdracht
+- (50% van je cijfer) SQL-opdracht in het systeem {{ sjaaq }}
+- (50% van je cijfer) Opdracht database-ontwerp
 
 Je levert in voor de deadline bovenaan deze pagina.
 
 ## Uitleg over inleveropdrachten
 
-Welkom bij een module van het Informatica parcours van de Q-vakken!
+Welkom bij een module van het informaticaparcours van de Q-vakken!
 
 ### Zelfstandig werken en bronnen vermelden
 
@@ -50,7 +50,7 @@ De volgende uitgangspunten gelden voor deze module:
 
 Informatica heeft vaak opdrachten met broncode, vormen van programmeerwerk.
 
-- Je levert een bestand dat in voor computers en voor mensen leesbaar is
+- Je levert een bestand in dat voor computers en voor mensen leesbaar is
 	- Let daarom goed op de instructies bij de opdracht
 
 ### Meerdere bestanden inleveren

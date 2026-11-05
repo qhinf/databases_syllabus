@@ -17,7 +17,7 @@ Bekijk het onderstaande ERD.
 Controleer eerst twee dingen:
 
 - **Zit er geen redundantie (dubbel opgeslagen gegevens) meer in?**
-- **Zijn alle meer-meer relaties opgelost?**
+- **Zijn alle meer-meerrelaties opgelost?**
 
 Wanneer je antwoord op beide vragen **ja** is, dan kun je doorgaan met het
 fysieke ontwerp.
@@ -143,7 +143,7 @@ Opmerkingen:
 - De prijs heeft twee cijfers achter de komma
 - Het veld `nieuw` geeft aan of een fiets nieuw is of tweedehands.
 
-a) Verwijder indien nodig meer-meer relaties.
+a) Verwijder indien nodig meer-meerrelaties.
 
 b) Maak een relationeel model van dit ERD.
 

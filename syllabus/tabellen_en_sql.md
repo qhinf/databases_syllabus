@@ -1,8 +1,8 @@
 # Hoe werkt een relationele database
 
-> Een tabel is als een excelsheet, met precieze kolommen en rijen
+> Een tabel is als een Excel-sheet, met precieze kolommen en rijen
 
-Een tabel <!-- todo: plaatje --> ziet er uit als een excel-sheet. Er is wel een
+Een tabel <!-- todo: plaatje --> ziet er uit als een Excel-sheet. Er is wel een
 belangrijk verschil. Excel laat je toe om willekeurig wat in de vakjes te
 zetten. Een database laat dat niet toe.
 
@@ -67,7 +67,7 @@ elkaar koppelt, leer je in [](sleutels_en_relaties.md).
 - Rij
 - Kolom
 
-## De vraag-taal SQL
+## De vraagtaal SQL
 
 > SQL: Een studievriend van de docent noemde het ooit *silly question
 > language*, die grap mag je van harte overnemen!
@@ -76,10 +76,10 @@ elkaar koppelt, leer je in [](sleutels_en_relaties.md).
 
 Al sinds het begin van de informatica is er een zoektocht naar programmeertalen
 die 'makkelijk' zijn. Dit zodat meer mensen met computers kunnen werken. Zeker
-in de tijd dat er nog geen touch-screens en zelfs nog geen computermuis bestond
+in de tijd dat er nog geen touchscreens en zelfs nog geen computermuis bestond
 was dit erg lastig. Laat staan de AI's van nu!
 
-De essentie van SQL is dat je de database laat weten *wat* je wil zien, maar niet *hoe* die dat moet gaan vinden.
+De essentie van SQL is dat je de database laat weten *wat* je wilt zien, maar niet *hoe* die dat moet gaan vinden.
 
 Alle kolommen laten zien van de tabel `docent`:
 

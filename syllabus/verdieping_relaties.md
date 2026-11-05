@@ -10,7 +10,7 @@ De diagrammen in deze verdieping zijn in een oudere stijl getekend: met
 entiteitnamen in hoofdletters en met gestippelde of doorgetrokken lijnen. De
 kraaienpoten lees je op dezelfde manier als in de lesstof. Het verschil tussen
 gestippeld en doorgetrokken wordt hieronder uitgelegd bij
-[ouder-kind relaties](#ouder-kind-relaties); in de lesstof en de eindopdracht
+[ouder-kindrelaties](#ouder-kind-relaties); in de lesstof en de eindopdracht
 hoef je dat onderscheid niet te maken.
 :::
 
@@ -19,7 +19,7 @@ hoef je dat onderscheid niet te maken.
 - Iedere zin begint met _iedere_ of _elke_.
 - De zinnen komen in paren.
 - Er zit een werkwoord in de zin.
-- "Een of meer", "precies een", "nul of een" en "nul of meer" geven de kardinaliteit aan.
+- "Eén of meer", "precies één", "nul of één" en "nul of meer" geven de kardinaliteit aan.
 - Het onderwerp en lijdend voorwerp in de zin worden gevormd door entiteiten.
 - Vaak moet met de opdrachtgever besproken worden hoe het precies zit. Is het
   bijvoorbeeld toegestaan dat een werknemer meerdere banen heeft?
@@ -152,11 +152,11 @@ Teken ERD's bij de volgende relaties.
 1. Iedere woonplaats is de geboorteplaats van nul of meer personen. Iedere persoon is geboren in precies één woonplaats.
 2. Iedere kamer herbergt nul of meer gasten. Iedere gast logeert in precies één kamer.
 3. Iedere werknemer werkt op precies één afdeling. Iedere afdeling heeft één of meer werknemers.
-4. Iedere e-mail is gericht aan één of meer personen. Ieder persoon is de geadresseerde van nul of meer e-mails.
+4. Iedere e-mail is gericht aan één of meer personen. Iedere persoon is de geadresseerde van nul of meer e-mails.
 5. Ieder stuk gereedschap heeft precies één prijs. Iedere prijs hoort bij één of meer stukken gereedschap.
 6. Ieder kind heeft precies één moeder. Iedere moeder heeft één of meer kinderen.
 7. Iedere leerling heeft les van één of meer docenten. Iedere docent geeft les aan één of meer leerlingen.
-8. Iedere vingerafdruk behoort tot precies één persoon. Ieder persoon heeft één of meer vingerafdrukken.
+8. Iedere vingerafdruk behoort tot precies één persoon. Iedere persoon heeft één of meer vingerafdrukken.
 :::
 
 :::{exercise} Overdraagbaarheid
