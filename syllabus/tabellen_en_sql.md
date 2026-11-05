@@ -2,7 +2,7 @@
 
 > Een tabel is als een excelsheet, met precieze kolommen en rijen
 
-Een tabel (todo: plaatje) ziet er uit als een excel-sheet. Er is wel een
+Een tabel <!-- todo: plaatje --> ziet er uit als een excel-sheet. Er is wel een
 belangrijk verschil. Excel laat je toe om willekeurig wat in de vakjes te
 zetten. Een database laat dat niet toe.
 
@@ -31,7 +31,7 @@ Daar zijn technische redenen voor, onder andere omdat computers sneller kunnen r
 
 ### Een bank met gebruiker, rekening, transacties
 
-(todo: maak voorbeeld-tabellen)
+<!-- todo: maak voorbeeld-tabellen -->
 
 ## Begrippen
 
@@ -59,5 +59,5 @@ Alle kolommen laten zien van de tabel `docent`:
 select * from docent;
 
 ```
-Al mijn uitleg en de eerste inleveropdracht vind je op de website: [Sjaaq](https://sql.merijn.xyz)
+Al mijn uitleg en de eerste inleveropdracht vind je op de website: {{ sjaaq }}
 het systeem waar je queries kunt uitvoeren en maken. Dat systeem slaat je antwoorden op en op die manier zijn ze ook meteen ingeleverd, handig!

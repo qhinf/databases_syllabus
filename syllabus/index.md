@@ -29,7 +29,7 @@ Er zijn bij deze module twee zaken die je moet inleveren:
 
 De beoordeling gebeurt aan de hand van wat jij inlevert, en bestaat uit twee delen:
 
-- (50% van je cijfer) SQL opdracht in het Sjaaq systeem: https://sql.merijn.xyz Sjaaq
+- (50% van je cijfer) SQL opdracht in het {{ sjaaq }} systeem
 - (50% van je cijfer) Database ontwerp opdracht
 
 Je levert in voor de deadline bovenaan deze pagina.

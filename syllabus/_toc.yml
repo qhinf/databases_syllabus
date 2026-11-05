@@ -19,6 +19,3 @@ parts:
   chapters:
   - file: eindopdracht_sql
   - file: eindopdracht_ontwerp
-- caption: Extra
-  chapters:
-  - file: bug_bounty

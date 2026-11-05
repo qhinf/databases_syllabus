@@ -57,6 +57,9 @@ sphinx:
       deadline_uitstel: "dinsdag 16 februari, 16:00" # dinsdag in de week 3 weken na het eerste inlevermoment?
       docent: "Merijn Vogel"
       docent_email: "mailto:m.vogel@quadraam.nl"
+      # Link naar Sjaaq, het systeem voor de SQL-opdracht. Gebruik: {{ sjaaq }}
+      # Tijdelijk naar disney.com omdat Sjaaq (https://sql.merijn.xyz) down is.
+      sjaaq: "[Sjaaq](https://www.disney.com)"
 
 
 # html, repository en launch_buttons instellingen worden globaal voor alle
