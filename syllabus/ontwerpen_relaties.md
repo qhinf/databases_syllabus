@@ -36,8 +36,8 @@ Voorbeelden:
 
 *Maar* dit is maar de helft van het verhaal! Van al deze zaken willen we ook de andere kant van de relatie weten. Bijvoorbeeld:
 
-- Elke bestelling bestaat uit 1 of meer regels, en
-- Klanten kopen een of meer product.
+- Iedere bestelling bestaat uit een of meer regels, en
+- Iedere klant koopt een of meer producten.
 
 ### ERDish-zinnen
 
@@ -59,9 +59,9 @@ _Iedere_ **entiteit A** __werkwoord__ ..aantal.. **entiteit B**
 
 En dat de zinnen altijd in paren voorkomen. Als er een relatie is tussen twee entiteiten, dan moet je beide kanten van de relatie beschrijven.
 
-### Voorbeelden van ERD-ish zin-paren:
+### Voorbeelden van ERDish zin-paren
 
-- Een leerling volgt meerdere vakken. Vakken worden gevolgd door meerdere leerlingen.
+- Iedere leerling volgt een of meer vakken. Ieder vak wordt gevolgd door nul of meer leerlingen.
 - Elke medewerker werkt voor precies 1 afdeling. Voor iedere afdeling werken een of meer medewerkers.
 - Elke klant plaatst nul of meer bestellingen. Iedere bestelling is voor precies een klant.
 - Elke gebruiker heeft een of meer accounts. Elk account hoort bij precies 1 gebruiker.
@@ -69,8 +69,8 @@ En dat de zinnen altijd in paren voorkomen. Als er een relatie is tussen twee en
 
 ## Entiteit-relatie-diagrammen, een plaatje zegt meer
 
-De 'kardinaliteit' die we hierboven beschreven met woorden als 'precies 1', '1 of meer' tekenen we we als zogenaamde kraaienpoten (de Engelse term
-hiervoor is Crows Feet). Dit is een veelgebruikte manier om in een diagram de hoeveelheid (ariteit of kartinaliteit) van een relatie te beschrijven.
+De 'kardinaliteit' die we hierboven beschreven met woorden als 'precies 1', '1 of meer' tekenen we als zogenaamde kraaienpoten (de Engelse term
+hiervoor is Crows Feet). Dit is een veelgebruikte manier om in een diagram de hoeveelheid (kardinaliteit) van een relatie te beschrijven.
 
 Deze kraaienpoten zien er zo uit:
 
@@ -88,7 +88,7 @@ we om in een diagram op de volgende manier.
 
 - _auto_ en _monteur_:
     - *Iedere* _auto_ wordt onderhouden door **precies een** _monteur_.
-    - *Iedere* _monteur_ onderhoudt **meer dan een** _auto_.
+    - *Iedere* _monteur_ onderhoudt **een of meer** _auto_s.
 
 ![Plaatje van auto monteur ERD](assets/ontwerpen_relaties/erd-voorbeeld-auto-monteur.png)
 
@@ -100,4 +100,4 @@ In dit plaatje:
 
 
 Als er meer entiteiten zijn, dan worden die allemaal ondergebracht in een grote plaat.
-In de volgende sectie zien we daarvan een voorbeeld.
+In het volgende hoofdstuk zien we daarvan een voorbeeld.

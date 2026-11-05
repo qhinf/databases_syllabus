@@ -4,7 +4,7 @@
 
 Een database is een computersysteem dat gegevens opslaat op een gestructureerde
 manier. Een goed ontworpen database maakt het mogelijk gegevens weer snel en
-efficient terug te kunnen vinden. En niet 'een gokje' te doen naar die gegevens
+efficiënt terug te kunnen vinden. En niet 'een gokje' te doen naar die gegevens
 (zoals google of een AI), maar *exact* de juiste gegevens terugvindt.
 
 Een database heeft daarom intern een structuur die lijkt op een excel-sheet:
@@ -12,16 +12,16 @@ het heeft *tabellen* met daarin kolommen en rijen.
 
 
 Waar bestaan databases? Overal waar computers zijn. Bijna elke app in je
-telefoon heeft waarschijnljk een database. Chat apps bijvoorbeeld voor al je
+telefoon heeft waarschijnlijk een database. Chat apps bijvoorbeeld voor al je
 chats en contacten. Je telefoon voor al je contacten met een telefoonnummer.
 
 Een betaal-en-bankieren-app heeft contact met een centrale database van de bank
 om te weten wat het saldo is en wat er met je geld is gebeurd.
 
 Een school heeft databases voor het bijhouden van leerlingen, klassen, cijfers,
-    vakken, docenten etc.
+vakken, docenten etc.
 
-Niet elk van deze tabellen is een relationele database waarmee we kennis maken
+Niet elk van deze databases is een relationele database waarmee we kennis maken
 in deze module, al zal het je verbazen hoeveel dat er wel zijn.
 
 > Voor wie dieper wil duiken: zoek SQLite op. De website is underwhelming maar
@@ -73,9 +73,9 @@ Een voordeel kan nadelen met zich meebrengen.
 Een database kan rijen of soms zelfs hele tabellen op slot zetten, totdat een actie
 klaar is. Dit kan betekenen dat andere processen moeten wachten tot dat slot
 eraf is. Dit kan zorgen voor vertraging. Sterker nog: soms wachten processen op zo'n manier op elkaar
-dat ze geen ban allen meer vooruit komen. Dat heet een **deadlock**.
+dat ze geen van allen meer vooruit komen. Dat heet een **deadlock**.
 
 En de laatste garantie heeft ook een nadeel. Een database *moet* gegevens
-wegschrijven naar de vaste opslag. Dat is niet altijd efficient.
-Besturingssytemen van computer willen dat graag optimaliseren en soms even
+wegschrijven naar de vaste opslag. Dat is niet altijd efficiënt.
+Besturingssystemen van computers willen dat graag optimaliseren en soms even
 wachten met gegevens wegschrijven. 

@@ -12,7 +12,7 @@
 
 Aan het eind van deze module:
 
-- Weet je wat een databases is, specifiek richten we ons op zogenaamde relationele databases
+- Weet je wat een database is, specifiek richten we ons op zogenaamde relationele databases
 - Kun je gegevens opzoeken in een database met de vraag-taal SQL
 - Kun je een eenvoudig datamodel ontwerpen
 - Weet je dat er meer soorten database zijn dan alleen relationele databases (NoSQL)
@@ -58,6 +58,19 @@ Informatica heeft vaak opdrachten met broncode, vormen van programmeerwerk.
 - Maak een mapje met daarin de bestanden
 - Maak van dat mapje een zip-bestand
 - Lever het zip-bestand in via: https://app.q-vakken.nl/
+
+## Lesmateriaal en verdieping
+
+Het *lesmateriaal* behandelt alles wat je nodig hebt voor de eindopdrachten.
+De hoofdstukken onder *Verdieping* zijn extra: daar vind je meer theorie en
+oefenopdrachten voor wie verder wil oefenen of meer wil weten.
+
+## Colofon
+
+Delen van de verdiepingshoofdstukken zijn afkomstig van de cursus
+Databasedesign van het SLO, geschreven door Eelco Dijkstra. Het hoofdstuk over
+ERD naar SQL maakt gebruik van het materiaal van Heer deBeer. In 2023 en
+2025 is deze syllabus herschreven door docent Merijn Vogel.
 
 ## Inhoudsopgave
 

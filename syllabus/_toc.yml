@@ -15,6 +15,13 @@ parts:
   - file: ontwerpen_entiteiten
   - file: ontwerpen_relaties
   - file: meer_meer_relaties
+  - file: nosql
+- caption: Verdieping
+  chapters:
+  - file: verdieping_attributen
+  - file: verdieping_relaties
+  - file: verdieping_ontwerp_verbeteren
+  - file: verdieping_erd_naar_sql
 - caption: Eindopdrachten
   chapters:
   - file: eindopdracht_sql

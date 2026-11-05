@@ -1,4 +1,4 @@
-# meer-meer: werkt in een ERD maar _niet_ in een relationele database
+# Meer-meer: werkt in een ERD maar _niet_ in een relationele database
 
 Soms ontstaat er in een ERD een zogenaamde meer-meer relatie. Dat betekent dat
 in de ERDish zinnen, in beide richtingen de relatie 'meer' bevat.
@@ -19,7 +19,7 @@ Als we dit zouden willen opslaan in twee tabellen dan lukt dat niet goed: als we
 een product-kolom zouden opnemen, dan kan de klant maar 1 product bestellen. En als we bij product
 een klant zouden willen opnemen, dan kan maar 1 klant dat product bestellen.
 
-Met product bedoelen we bijvoorbeeld 'een zwart T-shirt in maar M', waarvan de winkel er bijvoorbeeld
+Met product bedoelen we bijvoorbeeld 'een zwart T-shirt in maat M', waarvan de winkel er bijvoorbeeld
 honderd heeft liggen.
 
 Een oplossing zou kunnen zijn dat we voor elk individueel ding een rij aanmaken in de database, maar
@@ -32,19 +32,22 @@ De "klassieke" structuur voor klanten die producten kopen wordt dan als volgt:
 
 ![Plaatje van klant die bestellingen kan plaatsen](assets/meer_meer_relaties/erd-voorbeeld-bestelling.png)
 
-Op deze manier heeft is er geen enkele meer-meer relatie. 
+Op deze manier is er geen enkele meer-meer relatie.
 
-> TIP: Maak voor jezelf de ERDish-zinnen bij elke van deze relaties (dus, zes ERDish zinnen).
-Klap daarna de sectie hieronder open om je zinnen te controleren.
+:::{exercise}
+:label: erdish-bestelling
 
-<details>
-  <summary>De ERDish-zinnen voor bovenstaand ERD</summary>
+Maak voor jezelf de ERDish-zinnen bij elke relatie in bovenstaand ERD (dus zes ERDish-zinnen).
+Klap daarna de uitwerking hieronder open om je zinnen te controleren.
+:::
+
+:::{solution} erdish-bestelling
+:class: dropdown
+
 - Iedere _klant_ plaatst *nul of meer* _bestellingen_.
-- Iedere _bestelling_ is geplaatst door *precies een* klant.
-
+- Iedere _bestelling_ is geplaatst door *precies een* _klant_.
 - Iedere _bestelling_ omvat *een of meer* _bestelregels_.
 - Iedere _bestelregel_ zit in *precies een* _bestelling_.
-
 - Iedere _bestelregel_ gaat over *precies een* _product_.
 - Ieder _product_ zit in *nul of meer* _bestelregels_.
-</details>
+:::

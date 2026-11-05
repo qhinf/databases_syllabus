@@ -31,7 +31,7 @@ En dit proces herhaalt zich tot we een punt bereiken waarop we tevreden zijn voo
 De meeste applicaties die we zo maken worden daarna constant bijgewerkt met nieuwe features, en anders op zijn
 minst onderhouden.
 
-## Beperkingen van een realtionele database
+## Beperkingen van een relationele database
 
 Zoals we ontdekt hebben bij onze avonturen met SQL, werken relationele databases met tabellen.
 In de tabel leggen rijen een 'opname' vast: een weergave van 'iets' in de werkelijkheid. De kolommen van een tabel
@@ -85,4 +85,6 @@ je ziet in de trein een 'treinnummer'. Zo'n nummer is zonder twijfel een attribu
 
 Webshops zijn er te over. Bedenk entiteiten waar je aan denkt bij een webshop.
 
-tip: Doe dit eerst zonder er een te bekijken. Daarna bekijk er eens een; komen er meer naar boven?
+:::{tip}
+Doe dit eerst zonder er een te bekijken. Daarna bekijk er eens een; komen er meer naar boven?
+:::
