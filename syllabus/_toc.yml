@@ -6,5 +6,19 @@ format: jb-book
 root: index.md
 options:
   numbered: false
-chapters:
-- file: databases-and-sql
+parts:
+- caption: Lesmateriaal
+  chapters:
+  - file: wat_is_een_database
+  - file: tabellen_en_sql
+  - file: sleutels_en_relaties
+  - file: ontwerpen_entiteiten
+  - file: ontwerpen_relaties
+  - file: meer_meer_relaties
+- caption: Eindopdrachten
+  chapters:
+  - file: eindopdracht_sql
+  - file: eindopdracht_ontwerp
+- caption: Extra
+  chapters:
+  - file: bug_bounty
