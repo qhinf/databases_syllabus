@@ -282,7 +282,7 @@ De kolom *parcours_id* heet een _foreign key_: de primaire sleutel van een _ande
 
 In een plaatje:
 
-![Plaatje van twee tabellen met een relatie](images/db-relaties-20250918.drawio.png)
+![Plaatje van twee tabellen met een relatie](assets/db-relaties-20250918.drawio.png)
 
 Databases zullen een relatie afdwingen: je kunt alleen nieuwe rijen toevoegen die aan de relatie voldoen; en je kunt rijen niet weghalen als er een verwijzing naartoe is. Die bescherming is een belangrijke eigenschap van relationele databases.
 
@@ -453,7 +453,7 @@ hiervoor is Crows Feet). Dit is een veelgebruikte manier om in een diagram de ho
 Deze kraaienpoten zien er zo uit:
 
 
-![Plaatje van de vier kraaienpoten](images/crows-feet-enumeration.png)
+![Plaatje van de vier kraaienpoten](assets/crows-feet-enumeration.png)
 
 Een rondje of streep voor de nul of een. Een enkele streep of drie streepjes in de vorm van een 
 vogelpootje voor de 'meer'-variant.
@@ -468,7 +468,7 @@ we om in een diagram op de volgende manier.
     - *Iedere* _auto_ wordt onderhouden door **precies een** _monteur_.
     - *Iedere* _monteur_ onderhoudt **meer dan een** _auto_.
 
-![Plaatje van auto monteur ERD](images/erd-voorbeeld-auto-monteur.png)
+![Plaatje van auto monteur ERD](assets/erd-voorbeeld-auto-monteur.png)
 
 In dit plaatje:
 - Wordt iedere entiteit getoond als rechthoek met afgeronde hoeken.
@@ -495,7 +495,7 @@ Bijvoorbeeld de relatie tussen klanten en producten:
 
 Hier hoort in eerste instantie het volgende ERD bij:
 
-![Plaatje van klant bestelt product](images/erd-voorbeeld-klant-product-meer-meer.png)
+![Plaatje van klant bestelt product](assets/erd-voorbeeld-klant-product-meer-meer.png)
 
 
 Als we dit zouden willen opslaan in twee tabellen dan lukt dat niet goed: als we in de klant
@@ -513,7 +513,7 @@ te maken, die van de 'bestelregel': wat als ik vier zwarte T-shirts wil bestelle
 
 De "klassieke" structuur voor klanten die producten kopen wordt dan als volgt:
 
-![Plaatje van klant die bestellingen kan plaatsen](images/erd-voorbeeld-klant-product-meer-meer.png)
+![Plaatje van klant die bestellingen kan plaatsen](assets/erd-voorbeeld-bestelling.png)
 
 Op deze manier heeft is er geen enkele meer-meer relatie. 
 
