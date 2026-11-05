@@ -6,7 +6,7 @@ Databases en SQL
 - Deadline voor het inleveren van de eindopdrachten: **{{ deadline }}**
 - Deadline voor het aanvragen van uitstel: **{{ deadline_uitstel_aanvragen }}**
 - Uitgestelde deadline: **{{ deadline_uitstel }}**
-- Inleveren via: https://app.q-highschool.nl/
+- Inleveren via: https://app.q-vakken.nl/
 
 ## Let op:
 
@@ -20,7 +20,7 @@ Inhoudsopgave:
 
 # Uitleg over inleveropdrachten
 
-Welkom bij een informaticamodule van de Q-highschool!
+Welkom bij een module van het Informatica parcours van de Q-vakken!
 
 
 ## Zelfstandig werken en bronnen vermelden
@@ -40,7 +40,7 @@ Informatica heeft vaak opdrachten met broncode, vormen van programmeerwerk.
 
 - Maak een mapje met daarin de bestanden
 - Maak van dat mapje een zip-bestand
-- Lever het zip-bestand in via: https://app.q-highschool.nl/ 
+- Lever het zip-bestand in via: https://app.q-vakken.nl/ 
 
 # Inhoud van deze module, wat ga je leren
 
