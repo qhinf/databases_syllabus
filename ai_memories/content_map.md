@@ -143,8 +143,7 @@ Merijn Vogel. Leerdoelen staan hier (zie `project_overview.md`).
   referentiële integriteit, maar die term wordt expliciet niet gebruikt.
 - Bekende fout: het plaatje `db-relaties-20250918.drawio.png` toont tabellen
   `Docent`↔`Vak` met id's 1–3, terwijl de tekst `Vak` 100/101 gebruikt
-  (in-text todo; het punt in `todo.md` is afgevinkt omdat de tekst is
-  aangepast).
+  (het punt in `todo.md` is afgevinkt omdat de tekst is aangepast).
 
 ### `ontwerpen_entiteiten.md` — ontwerpen: werkwijze en terminologie
 
