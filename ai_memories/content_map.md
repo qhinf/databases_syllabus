@@ -129,12 +129,12 @@ Merijn Vogel. Leerdoelen staan hier (zie `project_overview.md`).
   geboortedatum ook niet altijd uniek (met persoonlijk voorbeeld van de docent).
 - `primary key`: één per tabel. SQL:
   `CREATE TABLE Docent (id int PRIMARY KEY, voornaam VARCHAR, achternaam VARCHAR);`
-- Tweede tabel `Parcours` (id 100 Informatica, 101 Filosofie). Met de bewuste
-  vereenvoudiging "elke docent kan maar 1 parcours geven" krijgt `Docent` de kolom
-  `parcours_id`, die verwijst naar de PK van de andere tabel → dat is de
+- Tweede tabel `Vak` (id 100 Informatica, 101 Filosofie). Met de bewuste
+  vereenvoudiging "elke docent kan maar 1 vak geven" krijgt `Docent` de kolom
+  `vak_id`, die verwijst naar de PK van de andere tabel → dat is de
   **relatie**; verwijzen naar de PK helpt de database efficiënt gegevens bij
   elkaar te halen.
-- SQL: `ALTER TABLE Docent ADD COLUMN parcours_id int REFERENCES Parcours(id);`
+- SQL: `ALTER TABLE Docent ADD COLUMN vak_id int REFERENCES Vak(id);`
   en de definitie van **foreign key**: de primaire sleutel van een andere tabel.
 - Box-quote-kern: "De relatie tussen twee tabellen loopt via de primaire
   sleutel van een van de twee tabellen."
@@ -142,7 +142,7 @@ Merijn Vogel. Leerdoelen staan hier (zie `project_overview.md`).
   voldoen; je kunt rijen niet weghalen als er naar verwezen wordt). Dit is
   referentiële integriteit, maar die term wordt expliciet niet gebruikt.
 - Bekende fout: het plaatje `db-relaties-20250918.drawio.png` toont tabellen
-  `Docent`↔`Vak` met id's 1–3, terwijl de tekst `Parcours` 100/101 gebruikt
+  `Docent`↔`Vak` met id's 1–3, terwijl de tekst `Vak` 100/101 gebruikt
   (in-text todo + punt in `todo.md`).
 
 ### `ontwerpen_entiteiten.md` — ontwerpen: werkwijze en terminologie

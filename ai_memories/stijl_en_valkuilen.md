@@ -39,8 +39,8 @@ voordat je iets "verbetert".
   `ontwerpen_relaties` hebben géén oefeningen in de syllabus; die worden in de
   les gemaakt.
 - Er zijn negen ```{table}``-blokken: `Gebouw`, `Gebruiker`, `Rekening`,
-  `Transactie` (tabellen_en_sql), `Docent`, `Parcours`, `Docent` (met
-  `parcours_id`) (sleutels_en_relaties), `Leerling` en "Fysiek ontwerp van tabel
+  `Transactie` (tabellen_en_sql), `Docent`, `Vak`, `Docent` (met
+  `vak_id`) (sleutels_en_relaties), `Leerling` en "Fysiek ontwerp van tabel
   leerlingen" (verdieping_attributen). Losse voorbeeldtabellen en matrices
   (de CRUD-legenda in `verdieping_relaties`, de REIZIGER/LAND/BEZIENSWAARDIGHEID/
   BETAALMIDDEL-matrix en de rooster-tabel in `verdieping_ontwerp_verbeteren`)
@@ -116,7 +116,7 @@ voordat je iets "verbetert".
 | Voorbeeldwereld | Waar het terugkomt |
 |---|---|
 | **reiziger / land / bezienswaardigheid / reis** | het grote doorlopende voorbeeld: de 5-entiteiten-lesfiguur in `ontwerpen_relaties` (Figuur 1 t/m 4), de CRUD-matrix + drie lees-ERD's + entrereenheid in `verdieping_relaties`, `extra_studie_land_naar_bezoeker.jpg` en de twee `SELECT`-queries in `verdieping_attributen`, het 10-tabel-rijgerecht in `verdieping_erd_naar_sql`, en drie van de zes opdrachten in `verdieping_ontwerp_verbeteren` |
-| **leerling / vak / docent / les (lesdocent, leslokaal, lesdag, lestijd)** | de nieuwe lesfiguren: entiteiten + attributen in `ontwerpen_entiteiten`, kardinaliteiten en kraaienpoten in `ontwerpen_relaties`, de lesdag/lestijd-herberekening in `verdieping_relaties`, en de `Docent`-/`Parcours`-tabellen in `sleutels_en_relaties` |
+| **leerling / vak / docent / les (lesdocent, leslokaal, lesdag, lestijd)** | de nieuwe lesfiguren: entiteiten + attributen in `ontwerpen_entiteiten`, kardinaliteiten en kraaienpoten in `ontwerpen_relaties`, de lesdag/lestijd-herberekening in `verdieping_relaties`, en de `Docent`-/`Vak`-tabellen in `sleutels_en_relaties` |
 | **gebouw / verdieping / lokaal** | attributen en foreign key in `verdieping_attributen`, plus de `verd-verb-schoolgebouw`-opdracht |
 | **klant–bestelling–product** en **recept met ingredienten** | tussenentiteiten in `verdieping_ontwerp_verbeteren` |
 | **webshop: gebruiker / rekening / transactie** | SQL-DDL met `CREATE TABLE` en constraints in `tabellen_en_sql` |
@@ -143,8 +143,8 @@ voordat je iets "verbetert".
    tabellen `Docent` (id 1 Merijn Vogel, 2 Arthur Rump, 3 Pieter van Engelen) en
    `Vak` (id 1 Informatica, 2 Wiskunde, 3 Geschiedenis), met labels
    "Docent heeft Vak" / "Docent doceert Vak". De **tekst** in dat hoofdstuk
-   gebruikt `Parcours` met id 100 Informatica en 101 Filosofie, en noemt vier
-   docenten (id 4 is Karen van Wichen, parcours 101) terwijl het plaatje er drie
+   gebruikt `Vak` met id 100 Informatica en 101 Filosofie, en noemt vier
+   docenten (id 4 is Karen van Wichen, vak 101) terwijl het plaatje er drie
    toont. Tekst en plaatje spreken elkaar dus op twee punten tegen; het plaatje
    is hier wat aangepast moet worden (punt in `todo.md`).
 3. **`verdieping_attributen.md`** claimt over de `#`-markering in oud
