@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Legenda bij de kraaienpootnotatie: vier kardinaliteiten, elk op eigen rij.
+     Zwart-wit, dunne lijnen, pootpunt aan één kant, Nederlandse termen rechts. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300"
+     font-family="DejaVu Sans, sans-serif" font-size="22" shape-rendering="geometricPrecision">
+
+  <rect x="0" y="0" width="480" height="300" fill="#ffffff"/>
+
+  <g transform="translate(14,0)" stroke="#111111" stroke-width="2" stroke-linecap="butt" fill="none">
+
+    <!-- nul of één: kring en één streepje -->
+    <path d="M24 52 H244"/>
+    <circle cx="192" cy="52" r="11" fill="#ffffff"/>
+    <path d="M244 39 V65"/>
+
+    <!-- precies één: twee streepjes -->
+    <path d="M24 122 H244"/>
+    <path d="M231 109 V135"/>
+    <path d="M244 109 V135"/>
+
+    <!-- nul of meer: kring en kroonvoet -->
+    <path d="M24 192 H210"/>
+    <circle cx="192" cy="192" r="11" fill="#ffffff"/>
+    <path d="M210 192 L238 173"/>
+    <path d="M210 192 L248 192"/>
+    <path d="M210 192 L238 211"/>
+
+    <!-- één of meer: kroonvoet met verplicht streepje -->
+    <path d="M24 262 H210"/>
+    <path d="M201 249 V275"/>
+    <path d="M210 262 L238 243"/>
+    <path d="M210 262 L248 262"/>
+    <path d="M210 262 L238 281"/>
+
+  </g>
+
+  <g transform="translate(14,0)" fill="#111111">
+    <text x="276" y="59">nul of één</text>
+    <text x="276" y="129">precies één</text>
+    <text x="276" y="199">nul of meer</text>
+    <text x="276" y="269">één of meer</text>
+  </g>
+
+</svg>

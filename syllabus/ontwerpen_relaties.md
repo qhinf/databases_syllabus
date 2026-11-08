@@ -75,7 +75,7 @@ hiervoor is crow's feet). Dit is een veelgebruikte manier om in een diagram de h
 Deze kraaienpoten zien er zo uit:
 
 
-![Plaatje van de vier kraaienpoten](assets/ontwerpen_relaties/crows-feet-enumeration.png)
+![Plaatje van de vier kraaienpoten](assets/ontwerpen_relaties/kraaienpoot-notatie-legenda.png)
 
 Een rondje of een streep voor nul of één. Een enkele streep of drie streepjes in de vorm van een 
 vogelpootje voor de 'meer'-variant.
