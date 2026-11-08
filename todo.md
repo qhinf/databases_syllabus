@@ -5,13 +5,21 @@ Openstaande punten uit de syllabus. In de markdown staan ze als HTML-comment
 
 ## syllabus/index.md
 
-- [ ] Planning per lesweek toevoegen (tabel met weeknummer, datum, fysiek/online, thema)
+- [x] Planning per lesweek toevoegen (tabel met weeknummer, datum, fysiek/online, thema)
+      (Merijn: ...niet helemaal mee eens, dat staat in app.q-vakken.nl en zou redundant zijn...)
 - [ ] Leerdoel "databases en regels": hoofdstuk schrijven of leerdoel schrappen
-- [ ] Nakijken: colofon noemt Merijn Vogel als herschrijver in 2025 (afgeleid uit de commits van "merry" in die periode)
+- [x] Nakijken: colofon noemt Merijn Vogel als herschrijver in 2025 (afgeleid uit de commits van "merry" in die periode)
+      *Merijn*: dat klopt, Merijn heeft het ge-de-wiskundiseerd, moeilijke
+       worden zoals 'normaalvorm' leiden af van het doel 'problemen vermijden'
+       maar de hoofdlijn van de module is nog min or meer intact en gebaseerd
+       op wat er al was
 
 ## syllabus/_toc.yml
 
-- [ ] Nakijken: oefeningen worden over het hele boek doorgenummerd (Oefening 1, 2, …). Per hoofdstuk nummeren kan met `numbered: true`, maar dan krijgen ook de hoofdstuktitels nummers
+- [x] Nakijken: oefeningen worden over het hele boek doorgenummerd (Oefening 1, 2, …). Per hoofdstuk nummeren kan met `numbered: true`, maar dan krijgen ook de hoofdstuktitels nummers
+      *Merijn*: Deze opdrachten zijn meer een handreiking in de syllabus voor
+      leerlingen die dit zelfstandig willen doen en als hint voor mij als
+      docent bij het maken van de lessen.
 
 ## syllabus/tabellen_en_sql.md
 
