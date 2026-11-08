@@ -139,32 +139,24 @@ voordat je iets "verbetert".
    ("Een rondje of een streep voor nul of één") wint: die klopt. Het plaatje is
    de fout, en er is geen bewerkbare bron voor. Herteken in plaats van de tekst
    aan de plaatjes aan te passen.
-2. **`assets/sleutels_en_relaties/db-relaties-20250918.drawio.png`** — toont de
-   tabellen `Docent` (id 1 Merijn Vogel, 2 Arthur Rump, 3 Pieter van Engelen) en
-   `Vak` (id 1 Informatica, 2 Wiskunde, 3 Geschiedenis), met labels
-   "Docent heeft Vak" / "Docent doceert Vak". De **tekst** in dat hoofdstuk
-   gebruikt `Vak` met id 100 Informatica en 101 Filosofie, en noemt vier
-   docenten (id 4 is Karen van Wichen, vak 101) terwijl het plaatje er drie
-   toont. Tekst en plaatje spreken elkaar dus op twee punten tegen; het plaatje
-   is hier wat aangepast moet worden (punt in `todo.md`).
-3. **`verdieping_attributen.md`** claimt over de `#`-markering in oud
+2. **`verdieping_attributen.md`** claimt over de `#`-markering in oud
    SQL-onderwijs: "Dit teken gebruiken we ook in de lesstof". In de huidige
    lesstof-ERD's staat nergens een `#`; daar staat de `(uid)`-notatie uit
    `ontwerpen_entiteiten.md` en de term "UID". Feitelijk klopt de claim dus niet
    helemaal — houd de zin aan (verdieping4 tekent wél met `#`) en meld het
    puntje bij het nakijken van dat hoofdstuk.
-4. **`verdieping_attributen`**: `char(10)`-uitleg is recent veranderd naar
+3. **`verdieping_attributen`**: `char(10)`-uitleg is recent veranderd naar
    "kortere teksten worden aangevuld met spaties". Staat als nakijkpunt in
    `todo.md`; een agent die "SQL-regels" controleert moet weten dat deze
    bewering bewust is aangepast, niet verzonnen.
-5. **`verdieping_ontwerp_verbeteren`**: de redundantietabel voor Isa is
+4. **`verdieping_ontwerp_verbeteren`**: de redundantietabel voor Isa is
    hergenummerd van 176 naar 175, en de richting in de matrix is rechtgezet naar
    "reiziger bezoekt bezienswaardigheid" (was "wordt bezocht"). Beide staan als
    na te kijken in `todo.md`. Zie ze niet als nieuwe fouten.
-6. **`verdieping_erd_naar_sql`**: de vraag "in 1e, 2e en 3e normaalvorm?" is
+5. **`verdieping_erd_naar_sql`**: de vraag "in 1e, 2e en 3e normaalvorm?" is
    bewust vervangen door "Zit er geen redundantie meer in?" — want normaalvormen
    worden nergens uitgelegd. Schrijf die term dus niet terug in de opgave.
-7. **`index.md`**: de regel "Inleveren via: https://app.q-vakken.nl/" staat
+6. **`index.md`**: de regel "Inleveren via: https://app.q-vakken.nl/" staat
    twee keer achter elkaar (typefout, geen inhoudelijk verschil).
 
 ## Gaten in de stof (niet per ongeluk "vullen")
