@@ -196,24 +196,28 @@ voordat je iets "verbetert".
   hebben geen solution; toevoegen kan, maar de docent wil die waarschijnlijk
   las laat in de les maken — het staat als open punt in `todo.md`.
 
-## Squeek-placeholder: de belangrijkste valkuil
+## Squeek-link: status, hernoeming en valkuilen
 
-Op dit moment is `{{ squeek }}` in `_config.yml`:
+`{{ squeek }}` in `_config.yml` is nu:
 
 ```yaml
-squeek: "[Squeek](https://www.disney.com)"
+squeek: "[Squeek](https://sql.merijn.xyz/)"
 ```
 
-met de comment "Tijdelijk naar disney.com omdat Squeek (https://sql.merijn.xyz)
-down is." Squeek — het SQL-oefensysteem van de docent, waar leerlingen queries
-maken én inleveren — is dus niet bereikbaar via de syllabus. Dit staat op drie
-plekken in de stof (`index.md`, `tabellen_en_sql.md`, `eindopdracht_sql.md`).
+Daarboven staat in `_config.yml` nog de comment "Tijdelijk naar disney.com omdat
+Squeek (https://sql.merijn.xyz) down is." — die regel is **veroudert** sinds de
+placeholder in november 2026 is teruggezet; laat hem staan (het is geen
+AI-bestand) en meld het puntje. Squeek — het SQL-oefensysteem van de docent, waar
+leerlingen queries maken én inleveren — staat op drie plekken in de stof
+(`index.md`, `tabellen_en_sql.md`, `eindopdracht_sql.md`).
 
-- De disney-link is een **bewuste noodoplossing** voor blok 2026/2027, geen typo
-  om "fixen".
+- De disney-link is in het begin van blok 2026/2027 een **bewuste noodoplossing**
+  geweest, geen typo om "fixen". Hij staat nog in de git-geschiedenis.
 - De enige SQL-inleveropdracht van de module loopt via dat systeem: als je de
   stof aanpast alsof Squeek er niet is, verander je de beoordeling.
-- Herstel de echte URL alleen als Squeek weer draait (of meld het probleem).
+- **Verander de URL niet zelf.** Squeek kan verhuizen naar Q-vakken-infra, en het
+  systeem is zo gebouwd dat dat kan; de docent bepaalt wanneer. Merk je dat de
+  link niet werkt, meld het dan, schrijf geen alternatieve SQL-stof.
 - **Hernoeming**: het systeem heette eerst **Sjaaq** (de substitutiekey in
   `_config.yml` heette toen `sjaaq`). In deze branch is alles hernoemd naar
   **Squeek**; de oude naam staat nog in de git-geschiedenis en in de verouderde

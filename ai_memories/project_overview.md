@@ -93,11 +93,13 @@ Gevolgen:
 
 ## Externe afhankelijkheden en context
 
-- **Squeek** (https://sql.merijn.xyz), voorheen **Sjaaq**: SQL-oefensysteem van de
-  docent, de facto de
-  plek waar SQL wordt aangeleerd én ingeleverd. **Op dit moment down**; de
-  substitutie `{{ squeek }}` in `_config.yml` wijst tijdelijk naar
-  `https://www.disney.com` als placeholders. Vroeger bevatte de syllabus ook een
+- **Squeek** (https://sql.merijn.xyz/), voorheen **Sjaaq**: SQL-oefensysteem van de
+  docent, de facto de plek waar SQL wordt aangeleerd én ingeleverd. De substitutie
+  `{{ squeek }}` in `_config.yml` wees in blok 2026/2027 tijdelijk naar
+  `https://www.disney.com` (Squeek was toen down); die placeholder is in november
+  2026 teruggezet op de echte URL. Het domein kan nog verhuizen: Squeek is zo
+  gebouwd dat dat kan, en de bedoeling is dat het op Q-vakken-infra gaat draaien.
+  Vroeger bevatte de syllabus ook een
   "Bug bounty"-hoofdstuk over Squeek (ethisch hacking op een productiesysteem); dat
   is in 2026 verwijderd (commit `cebe457`), de tekst staat nog in de git-geschiedenis.
 - **Colofon**: de verdiepingshoofdstukken zijn afgeleid van de cursus
@@ -117,5 +119,6 @@ Gevolgen:
 - Openstaand werk staat in `todo.md` (root): NoSQL-hoofdstuk schrijven,
   weekplanning-tabel, twee plaatjes die fout/verkeerd gelabeld zijn, verdieping-
   diagrammen in oude stijl opnieuw tekenen, en uitwerkingen bij oefenopdrachten.
-- Een kritieke, tijdelijke zaak: de Squeek-link is een disney.com-placeholder.
-  Zie `stijl_en_valkuilen.md`.
+- De Squeek-link is hersteld: `{{ squeek }}` wijst weer op
+  https://sql.merijn.xyz/ (de disney.com-placeholder van begin blok 2026/2027 is
+  weg). Zie `stijl_en_valkuilen.md`.

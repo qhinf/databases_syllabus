@@ -27,13 +27,15 @@ De uitgebreide notities staan in [`ai_memories/`](ai_memories/):
    `<!-- Deze regel niet wijzigen! -->` in `index.md`: versiebeheer loopt globaal
    via de Q-vakken-syllabusomgeving (repo `qhinf/syllabi`). De `html`-,
    `repository`- en `launch_buttons`-instellingen zijn ook globaal.
-6. **`{{ squeek }}` wijst tijdelijk naar `https://www.disney.com`** omdat Squeek
-   (https://sql.merijn.xyz, het SQL-oefensysteem van de docent) down is. Dit is
-   een bewuste noodoplossing voor blok 2026/2027. Herstel de link zodra Squeek
-   terug is, of meld het probleem expliciet. "Fix" het niet door er SQL-stof bij
-   te gaan schrijven: de SQL-opdrachten zelf zijn er (nog) niet. Squeek heette
-   voorheen **Sjaaq**; die oude naam staat nog in de git-geschiedenis en in de
-   verouderde html-resten in `syllabus/_build/`.
+6. **`{{ squeek }}` wijst weer naar `https://sql.merijn.xyz/`** — Squeek, het
+   SQL-oefensysteem van de docent. In blok 2026/2027 stond er tijdelijk
+   `https://www.disney.com` omdat Squeek down was; die placeholder is in
+   november 2026 teruggezet op de echte URL. Verander die link niet zelf: het
+   domein kan nog verhuizen (de bedoeling is Q-vakken-infra, en Squeek is zo
+   gebouwd dat het kan verhuizen). "Fix" een linkprobleem niet door er SQL-stof
+   bij te gaan schrijven: de SQL-opdrachten zelf zijn er (nog) niet. Squeek
+   heette voorheen **Sjaaq**; die oude naam staat nog in de git-geschiedenis en
+   in de verouderde html-resten in `syllabus/_build/`.
 7. **Houd de vaste begrippenparen aan** (zie `ai_memories/content_map.md`):
    tabel/entiteit, kolom/attribuut (nooit "rij" in een ontwerp), primary key/UID,
    foreign key/vreemde sleutel, kardinaliteit, ERDish-zinnen, redundantie,

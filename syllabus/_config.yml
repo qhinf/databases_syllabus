@@ -59,7 +59,9 @@ sphinx:
       docent_email: "mailto:m.vogel@quadraam.nl"
       # Link naar Squeek, het systeem voor de SQL-opdracht. Gebruik: {{ squeek }}
       # Tijdelijk naar disney.com omdat Squeek (https://sql.merijn.xyz) down is.
-      squeek: "[Squeek](https://www.disney.com)"
+      # En omdat we dat naar Q-vakken infra willen hebben, maar daar kan dit domein ook naar gaan wijzen.
+      # Squeek is zo gebouwd dat het kan verhuizen.
+      squeek: "[Squeek](https://sql.merijn.xyz/)"
 
 
 # html, repository en launch_buttons instellingen worden globaal voor alle
