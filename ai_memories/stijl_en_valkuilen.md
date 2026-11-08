@@ -87,7 +87,7 @@ voordat je iets "verbetert".
   cursief (`_auto_`, `_monteur_`), en `**precies één**` als vet — houd dat
   patroon aan in nieuwe ERDish-zinnen.
 - **HTML-comments voor todo's**: `<!-- todo: plaatje -->` in de lopende tekst,
-  zodat het niet op de site verschijnt (in-text todo's: 2 stuks, zie `todo.md`).
+  zodat het niet op de site verschijnt (in-text todo: 1 stuk, zie `todo.md`).
 - **`<!-- Deze regel niet wijzigen! -->`** boven de versieregel in `index.md`:
   laat die regel en `{{ versie }}` met rust.
 - **smartquotes/`replacements` staan aan**: `'` en `"` worden schuine quotes en
