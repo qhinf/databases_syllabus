@@ -29,7 +29,7 @@ Er zijn bij deze module twee zaken die je moet inleveren:
 
 De beoordeling gebeurt aan de hand van wat jij inlevert, en bestaat uit twee delen:
 
-- (50% van je cijfer) SQL-opdracht in het systeem {{ sjaaq }}
+- (50% van je cijfer) SQL-opdracht in het systeem {{ squeek }}
 - (50% van je cijfer) Opdracht database-ontwerp
 
 Je levert in voor de deadline bovenaan deze pagina.
@@ -51,7 +51,7 @@ De volgende uitgangspunten gelden voor deze module:
 Informatica heeft vaak opdrachten met broncode, vormen van programmeerwerk.
 
 - Je levert een bestand in dat voor computers en voor mensen leesbaar is
-	- Let daarom goed op de instructies bij de opdracht
+- Let daarom goed op de instructies bij de opdracht
 
 ### Meerdere bestanden inleveren
 

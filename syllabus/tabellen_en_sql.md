@@ -87,6 +87,6 @@ Alle kolommen laten zien van de tabel `docent`:
 select * from docent;
 ```
 
-Alle verdere uitleg over SQL vind je in {{ sjaaq }}, het systeem waar je
+Alle verdere uitleg over SQL vind je in {{ squeek }}, het systeem waar je
 queries kunt uitvoeren en maken. Daar maak je ook
 [](eindopdracht_sql.md).
