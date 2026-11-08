@@ -66,7 +66,6 @@ De kolom *vak_id* heet een _foreign key_: de primaire sleutel van een _andere_ (
 
 In een plaatje:
 
-<!-- todo: plaatje gebruikt de tabel Vak met andere id's dan de tekst (Parcours 100/101) -->
 ![Plaatje van twee tabellen met een relatie](assets/sleutels_en_relaties/db-relaties-20250918.drawio.png)
 
 Databases zullen een relatie afdwingen: je kunt alleen nieuwe rijen toevoegen die aan de relatie voldoen; en je kunt rijen niet weghalen als er een verwijzing naartoe is. Die bescherming is een belangrijke eigenschap van relationele databases.
