@@ -7,7 +7,9 @@ Openstaande punten uit de syllabus. In de markdown staan ze als HTML-comment
 
 - [x] Planning per lesweek toevoegen (tabel met weeknummer, datum, fysiek/online, thema)
       (Merijn: ...niet helemaal mee eens, dat staat in app.q-vakken.nl en zou redundant zijn...)
-- [ ] Leerdoel "databases en regels": hoofdstuk schrijven of leerdoel schrappen
+- [x] Leerdoel "databases en regels": hoofdstuk schrijven of leerdoel schrappen
+  *Merijn*: nop, ik ga dat noemen in een les en hoef er geen hoofdstuk van te maken ook al vind opus vanalles.
+
 - [x] Nakijken: colofon noemt Merijn Vogel als herschrijver in 2025 (afgeleid uit de commits van "merry" in die periode)
       *Merijn*: dat klopt, Merijn heeft het ge-de-wiskundiseerd, moeilijke
        worden zoals 'normaalvorm' leiden af van het doel 'problemen vermijden'

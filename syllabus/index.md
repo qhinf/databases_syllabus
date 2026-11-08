@@ -16,7 +16,7 @@ Aan het eind van deze module:
 - Kun je gegevens opzoeken in een database met de vraagtaal SQL
 - Kun je een eenvoudig datamodel ontwerpen
 - Weet je dat er meer soorten databases zijn dan alleen relationele databases (NoSQL)
-- En bonus: we praten ook even over databases en regels
+- En bonus / verdieping: we praten ook even over databases en (wettelijke) regels
 
 ## De eindopdrachten
 

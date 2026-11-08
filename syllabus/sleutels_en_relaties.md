@@ -69,3 +69,11 @@ In een plaatje:
 ![Plaatje van twee tabellen met een relatie](assets/sleutels_en_relaties/db-relaties-20250918.drawio.png)
 
 Databases zullen een relatie afdwingen: je kunt alleen nieuwe rijen toevoegen die aan de relatie voldoen; en je kunt rijen niet weghalen als er een verwijzing naartoe is. Die bescherming is een belangrijke eigenschap van relationele databases.
+
+## Welk probleem we hier vermijden: redundantie
+
+In het verdiepingshoofdstuk over een ERD verbeteren staat hier wat verdiepende uitleg over.
+
+Het 'netjes' houden van een datamodel doen we om ervoor te zorgen dat er niet per ongeluk
+fouten kunnen ontstaan in de vastlegging van records (feiten) in de database. 
+

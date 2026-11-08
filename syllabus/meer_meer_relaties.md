@@ -23,7 +23,7 @@ Met product bedoelen we bijvoorbeeld 'een zwart T-shirt in maat M', waarvan de w
 honderd heeft liggen.
 
 Een oplossing zou kunnen zijn dat we voor elk individueel ding een rij aanmaken in de database, maar
-dat voelt raar; we gaan dan heel vaak hetzelfde zeggen in de databasetabel alleen maar om dit probleem op te lossen.
+dat voelt raar; we gaan dan heel vaak hetzelfde zeggen in de databasetabel alleen maar om dit probleem op te lossen. Een database-ontwerp-jargon term voor 'heel vaak hetzelfde zeggen' is: `redundantie`.
 
 Vaak betekent een meer-meerrelatie eigenlijk iets op zichzelf en kunnen we een tabel `bestelling` erbij maken. Die kan dan verwijzen naar `klant` en `product`. Nog handiger is het om een vierde entiteit erbij
 te maken, die van de 'bestelregel': wat als ik vier zwarte T-shirts wil bestellen?
