@@ -43,6 +43,9 @@ Wat valt er op? Er staat veel dubbele informatie in. Dat noemen we
 'redundantie'. Het is onduidelijk wat de _entiteit_ hier is; het zijn er
 feitelijk meerdere door elkaar.
 
+Ook ontstaan hierdoor soms fouten: in een eerdere versie van dit document had
+een van de leerlingen twee verschillende leerlingnummers!
+
 Als je een model maakt en je merkt dat je gegevens vaak terug ziet komen, dan
 betekent dat meestal dat je een entiteit moet opbreken.
 
