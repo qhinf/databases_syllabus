@@ -30,7 +30,8 @@ Leerdoelen zoals die op `index.md` staan:
 5. Bonus: "we praten ook even over databases en regels"
 
 Let op de **afwijking tussen leerdoelen en inhoud** (bekend, vastgelegd in `todo.md`):
-doel 4 heeft alleen een leeg kapstokhoofdstuk (`nosql.md`, alleen een titel) en
+doel 4 heeft een kaal kapstokhoofdstuk (`nosql.md`: een titel plus één zin met
+een YouTube-link; nov 2026 verplaatst van Lesmateriaal naar de verdieping) en
 doel 5 heeft helemaal geen hoofdstuk.
 
 ## Opbouw van de module
@@ -39,8 +40,8 @@ Drie delen, vastgelegd in `syllabus/_toc.yml`:
 
 | Deel | Hoofdstukken | Rol |
 |------|--------------|-----|
-| **Lesmateriaal** | `wat_is_een_database`, `tabellen_en_sql`, `sleutels_en_relaties`, `ontwerpen_entiteiten`, `ontwerpen_relaties`, `meer_meer_relaties`, `nosql` | "alles wat je nodig hebt voor de eindopdrachten" |
-| **Verdieping** | `verdieping_attributen`, `verdieping_relaties`, `verdieping_ontwerp_verbeteren`, `verdieping_erd_naar_sql` | extra theorie + oefenopdrachten; niet verplicht |
+| **Lesmateriaal** | `wat_is_een_database`, `tabellen_en_sql`, `sleutels_en_relaties`, `ontwerpen_entiteiten`, `ontwerpen_relaties`, `meer_meer_relaties` | "alles wat je nodig hebt voor de eindopdrachten" |
+| **Verdieping** | `verdieping_attributen`, `verdieping_relaties`, `verdieping_ontwerp_verbeteren`, `verdieping_erd_naar_sql`, `nosql` | extra theorie + oefenopdrachten; niet verplicht |
 | **Eindopdrachten** | `eindopdracht_sql`, `eindopdracht_ontwerp` | wat er wordt ingeleverd en beoordeeld |
 
 ## Beoordeling en inleveren

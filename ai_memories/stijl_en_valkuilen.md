@@ -164,9 +164,11 @@ voordat je iets "verbetert".
 
 ## Gaten in de stof (niet per ongeluk "vullen")
 
-- **`nosql.md` is een kapstok**: alleen `# NoSQL: andere soorten databases`
-  (5 woorden). Lehrdoel 4 op `index.md` belooft NoSQL. Schrijf dit hoofdstuk
-  alleen als de opdracht expliciet is; het staat als open punt in `todo.md`.
+- **`nosql.md` is een kapstok**: `# NoSQL: andere soorten databases` plus één
+  zin met een YouTube-link (~33 woorden); staat sinds nov 2026 als laatste
+  hoofdstuk bij de verdieping. Lehrdoel 4 op `index.md` belooft NoSQL. Schrijf
+  dit hoofdstuk alleen als de opdracht expliciet is; het staat als open punt in
+  `todo.md`.
 - **Leerdoel "databases en regels"** (bonus op `index.md`) heeft geen hoofdstuk.
   Optie in `todo.md`: schrijven óf het leerdoel schrappen. Verzin niet zelf een
   handhaving-hoofdstuk.

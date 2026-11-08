@@ -15,15 +15,15 @@ Woordaantallen zijn indicatief (stand november 2026).
 | 4 | `ontwerpen_entiteiten.md` | Databases ontwerpen | 693 | 0 | 0 |
 | 5 | `ontwerpen_relaties.md` | Database-ontwerp: relaties | 648 | 2 | 0 |
 | 6 | `meer_meer_relaties.md` | Meer-meer: werkt in een ERD, maar niet in een relationele database | 339 | 2 | 1 |
-| 7 | `nosql.md` | NoSQL: andere soorten databases | 5 | 0 | 0 |
-| 8 | `verdieping_attributen.md` | Meer over entiteiten en attributen | 1019 | 2 | 4 |
-| 9 | `verdieping_relaties.md` | Meer over relaties en ERD's | 1030 | 7 | 4 |
-| 10 | `verdieping_ontwerp_verbeteren.md` | Een ERD verbeteren | 586 | 7 | 6 |
-| 11 | `verdieping_erd_naar_sql.md` | Van ERD naar SQL | 809 | 2 | 2 |
+| 7 | `verdieping_attributen.md` | Meer over entiteiten en attributen | 1019 | 2 | 4 |
+| 8 | `verdieping_relaties.md` | Meer over relaties en ERD's | 1030 | 7 | 4 |
+| 9 | `verdieping_ontwerp_verbeteren.md` | Een ERD verbeteren | 586 | 7 | 6 |
+| 10 | `verdieping_erd_naar_sql.md` | Van ERD naar SQL | 809 | 2 | 2 |
+| 11 | `nosql.md` | NoSQL: andere soorten databases | 33 | 0 | 0 |
 | 12 | `eindopdracht_sql.md` | Eindopdracht 1: SQL | 58 | 0 | 0 |
 | 13 | `eindopdracht_ontwerp.md` | Eindopdracht 2: Een databasemodel ontwerpen | 196 | 0 | 0 (casus) |
 
-Totaal: ~7450 woorden, 23 afbeeldingen (alle gebruikt, geen losse resten),
+Totaal: ~7480 woorden, 23 afbeeldingen (alle gebruikt, geen losse resten),
 17 oefenopdrachten, **1 uitwerking** (`:::{solution}` in `meer_meer_relaties.md`).
 
 ## De stof in één verhaal
@@ -219,13 +219,6 @@ Merijn Vogel. Leerdoelen staan hier (zie `project_overview.md`).
 - Oefening `erdish-bestelling`: zes ERDish-zinnen bij dit ERD maken, met de enige
   `:::{solution}` van de syllabus (6 zinnen, `:class: dropdown`).
 
-### `nosql.md` — leeg
-
-Alleen `# NoSQL: andere soorten databases`. De pagina staat wél in de
-inhoudsopgave (tussen `meer_meer_relaties` en de verdieping), dus leerlingen
-zien een lege hoofdstukpagina terwijl leerdoel 4 ("weet dat er meer soorten
-databases zijn") ernaar verwijst. Openstaand in `todo.md`.
-
 ### `verdieping_attributen.md` — types, waarden, soorten attributen
 
 - Open met de waarschuwing dat verdiepingsdiagrammen in oudere stijl zijn
@@ -344,6 +337,17 @@ databases zijn") ernaar verwijst. Openstaand in `todo.md`.
   staat goed/redelijk/slecht, prijs met twee decimalen, `nieuw` voor
   nieuw/tweedehands).
 
+### `nosql.md` — kapstok, nu als laatste verdiepingshoofdstuk
+
+- Alleen `# NoSQL: andere soorten databases` plus één zin met een markdown-link
+  naar een YouTube-filmpje (~33 woorden).
+- Nov 2026, op verzoek van de docent: verplaatst van Lesmateriaal naar
+  Verdieping, als laatste hoofdstuk daarvan.
+- Leerdoel 4 op `index.md` ("weet dat er meer soorten databases zijn") verwijst
+  nog naar NoSQL als gewone leerstof, terwijl het hoofdstuk nu in de optionele
+  verdieping staat.
+- Het schrijven van het hoofdstuk staat open in `todo.md`.
+
 ### `eindopdracht_sql.md` en `eindopdracht_ontwerp.md`
 
 - SQL-opdracht: in Squeek, waar ook de meeste SQL-uitleg staat; Squeek slaat
@@ -392,7 +396,9 @@ links:
 
 ## Wat er níét in de stof zit (gaten om rekening mee te houden)
 
-- **NoSQL**: alleen een titel (`nosql.md`), terwijl leerdoel 4 ernaar verwijst.
+- **NoSQL**: alleen een titel en één zin met een YouTube-link (`nosql.md`,
+  inmiddels verplaatst naar de verdieping), terwijl leerdoel 4 ernaar blijft
+  verwijst als gewone leerstof.
 - **"Databases en regels"**: als bonus-leerdoel aangekondigd, geen hoofdstuk
   (staat in `todo.md` als "hoofdstuk schrijven of leerdoel schrappen").
 - **Normalisatie** (1e/2e/3e normaalvorm) wordt genoemd maar niet uitgelegd;

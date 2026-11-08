@@ -47,23 +47,38 @@ Openstaande punten uit de syllabus. In de markdown staan ze als HTML-comment
 
 ## syllabus/nosql.md
 
-- [ ] Hoofdstuk over NoSQL-databases schrijven
+- [x] Hoofdstuk over NoSQL-databases schrijven
+  *Verplaatst nov 2026*: op verzoek van de docent staat `nosql.md` in
+  `_toc.yml` nu als laatste hoofdstuk bij het onderdeel Verdieping (was eerst
+  Lesmateriaal). Open punt: leerdoel 4 op `index.md` belooft NoSQL nog als
+  gewone leerstof.
   
 
 ## syllabus/verdieping_*.md
 
-- [ ] Diagrammen in de oude stijl (hoofdletters, gestippelde lijnen) opnieuw tekenen in de huisstijl van de lesstof, met bewerkbare draw.io-bron
-- [ ] Uitwerkingen toevoegen bij de oefenopdrachten (`:::{solution}`)
+- [x] Diagrammen in de oude stijl (hoofdletters, gestippelde lijnen) opnieuw tekenen in de huisstijl van de lesstof, met bewerkbare draw.io-bron
+  *Merijn*: als je weer eens met opus gaat vlooien door deze syllabus mag je hier even preciezer aangeven wat je zou willen.
+  En nieuwe diagrammen willen we waarschijnlijk liever als `svg` laten maken met AI, zodat AI er dan weer vergelijkbare diagrammen van kan maken.
+  Als je nog tokens hebt... kunnen we dat vast een keer doen.
+
+- [x] Uitwerkingen toevoegen bij de oefenopdrachten (`:::{solution}`)
+  *Merijn*: de oefenopdrachten hebben geen uitwerkingen; al is het maar omdat ze meer als denk-oefening zijn bedoeld en/of tot inspiratie kunnen dienen voor de les.
 
 ## syllabus/verdieping_attributen.md
 
-- [ ] Nakijken: tekst over `char(10)` aangepast. De oude tekst zei dat kortere tekst niet mag; in SQL wordt die aangevuld met spaties
+- [x] Nakijken: tekst over `char(10)` aangepast. De oude tekst zei dat kortere tekst niet mag; in SQL wordt die aangevuld met spaties
+  *Merijn*: strikt genomen is dat aanvullen met spaties een implementatiedetail maar dat is wel wat waarschijnlijk de standaard is.
 
 ## syllabus/verdieping_ontwerp_verbeteren.md
 
-- [ ] Nakijken: in de redundantie-tabel stond Isa één keer met leerlingnummer 176, nu overal 175
-- [ ] Nakijken: in de matrix is de richting rechtgezet naar "reiziger bezoekt bezienswaardigheid" (stond "wordt bezocht")
+- [x] Nakijken: in de redundantie-tabel stond Isa één keer met leerlingnummer 176, nu overal 175
+  *Merijn*: dit klopt, en wordt juist verplichte kost denk ik, tenzij ik het al uitleg in de eedere hoofdstukken
+
+- [x] Nakijken: in de matrix is de richting rechtgezet naar "reiziger bezoekt bezienswaardigheid" (stond "wordt bezocht")
+  *Merijn*: lgtm opus... lgtm
 
 ## syllabus/verdieping_erd_naar_sql.md
 
-- [ ] Nakijken: de vraag "Is deze ERD in 1e, 2e en 3e normaalvorm?" is vervangen door "Zit er geen redundantie meer in?", omdat normaalvormen nergens worden uitgelegd
+- [x] Nakijken: de vraag "Is deze ERD in 1e, 2e en 3e normaalvorm?" is vervangen door "Zit er geen redundantie meer in?", omdat normaalvormen nergens worden uitgelegd
+  *Merijn* dat lijkt me correct, ik *vermijd* de term 'normaalvorm' en dat heeft dan ook nog eens levels... net alsof dit een moeilijk vak is...
+   Het is simpelweg 'zijn er geen problemen voor een echte database'. Zie het als de-wiskundificatie. Ja, ik heb naar Felienne geluisterd.
