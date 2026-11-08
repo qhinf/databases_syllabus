@@ -100,7 +100,8 @@ voordat je iets "verbetert".
   kleine letters, attributen als lijst in de entiteit, kraaienpoten, de
   relatietaal op de lijn. Bestanden in `assets/<hoofdstuk>/` met een
   Engelstalige, beschrijvende bestandsnaam
-  (`erd-voorbeeld-auto-monteur.png`, `crows-feet-enumeration.png`).
+  (`erd-voorbeeld-auto-monteur.png`, `kraaienpoot-notatie-legenda.png`). De namen zijn
+  beschrijvend; `kraaienpoot-notatie-legenda` is de eerste Nederlandstalige.
 - **Verdiepings-stijl** (oud, JPG, afkomstig uit de SLO-cursus Databasedesign):
   ENTITEITEN IN HOOFDLETTERS, UID-markeringen `#` primary UID, `(#)` secondary
   UID, `*` verplicht, `o` optioneel, en gestippelde (gewone relatie) vs
@@ -109,7 +110,8 @@ voordat je iets "verbetert".
 - Alt-teksten zijn in het Nederlands en beschrijvend ("Plaatje van twee tabellen
   met een relatie", "Entiteit leerling met UID"). Houd die stijl aan.
 - Er staan géén bewerkbare `.drawio`-bronbestanden in de repo (behalve de
-  export-naam van één PNG: `db-relaties-20250918.drawio.png`).
+  export-naam van één PNG: `db-relaties-20250918.drawio.png`). Inmiddels staat er wél
+  één bewerkbare vectorbron: `assets/ontwerpen_relaties/kraaienpoot-notatie-legenda.svg`.
 
 ## Doorlopende voorbeelden (hergebruik ze, verzin geen nieuwe)
 
@@ -132,13 +134,14 @@ voordat je iets "verbetert".
 
 ## Bekende inhoudelijke fouten (gecheckt in de plaatjes zelf)
 
-1. **`assets/ontwerpen_relaties/crows-feet-enumeration.png`** — de bovenste
-   kraaienpoot (rondje + ene streep = nul of één) is gelabeld **"nul of meer"**,
-   en de tekst in het plaatje zegt "precies 1" met een cijfer. De labels komen
-   dus twee keer voor en de eerste is fout. De omringende tekst
-   ("Een rondje of een streep voor nul of één") wint: die klopt. Het plaatje is
-   de fout, en er is geen bewerkbare bron voor. Herteken in plaats van de tekst
-   aan de plaatjes aan te passen.
+1. **`assets/ontwerpen_relaties/crows-feet-enumeration.png`** – *opgelost in november
+   2026*. De bovenste kraaienpoot (rondje + ene streep = nul of één) was gelabeld
+   **"nul of meer"**, en de tekst in het plaatje zei "precies 1" met een cijfer: de
+   labels kwamen dus twee keer voor en de eerste was fout. De omringende tekst
+   ("Een rondje of een streep voor nul of één") klopte. Het plaatje is hertekend als
+   `kraaienpoot-notatie-legenda.png` (met SVG-bron), in plaats van de tekst aan het
+   plaatje aan te passen. Let op: de nieuwe legenda tekent 'precies één' als twee
+   streepjes, en die zin in het hoofdstuk is onbewerkt gelaten.
 2. **`verdieping_attributen.md`** claimt over de `#`-markering in oud
    SQL-onderwijs: "Dit teken gebruiken we ook in de lesstof". In de huidige
    lesstof-ERD's staat nergens een `#`; daar staat de `(uid)`-notatie uit

@@ -23,7 +23,9 @@ Openstaande punten uit de syllabus. In de markdown staan ze als HTML-comment
 
 ## syllabus/tabellen_en_sql.md
 
-- [ ] Plaatje van een tabel toevoegen bij "Een tabel ziet er uit als een excel-sheet" (`todo: plaatje`)
+- [x] Plaatje van een tabel toevoegen bij "Een tabel ziet er uit als een excel-sheet" (`todo: plaatje`)
+  *Merijn*: gaan we gewoon niet doen elke leerling weet wat een excelsheet is is een goede aanname)
+
 - [x] Voorbeeld-tabellen maken bij "Een bank met gebruiker, rekening, transacties" (`todo: maak voorbeeld-tabellen`)
 
 ## syllabus/sleutels_en_relaties.md
@@ -37,11 +39,16 @@ Openstaande punten uit de syllabus. In de markdown staan ze als HTML-comment
 
 ## syllabus/ontwerpen_relaties.md
 
-- [ ] Plaatje `crows-feet-enumeration.png`: bovenste kraaienpoot heet "nul of meer", moet "nul of een" zijn (geen bewerkbare bron aanwezig, opnieuw tekenen)
+- [x] Plaatje `crows-feet-enumeration.png`: bovenste kraaienpoot heet "nul of meer", moet "nul of een" zijn (geen bewerkbare bron aanwezig, opnieuw tekenen)
+  *Merijn*: dat hebben we al 6 jaar overleefd...
+  *Opgelost nov 2026*: hertekend als `kraaienpoot-notatie-legenda.png`, met bewerkbare
+  SVG-bron `kraaienpoot-notatie-legenda.svg`. Vier kardinaliteiten, elk op eigen rij,
+  Nederlandse termen rechts van het pootpunt. Het foute plaatje is verwijderd. maar ok we gaan hem vervangen
 
 ## syllabus/nosql.md
 
 - [ ] Hoofdstuk over NoSQL-databases schrijven
+  
 
 ## syllabus/verdieping_*.md
 

@@ -46,10 +46,12 @@ De uitgebreide notities staan in [`ai_memories/`](ai_memories/):
    "totn/veelv/knvv/kntv". Behandel beide als bestaand recht, en maak een
    nieuwe oefening niet per ongeluk in nog een derde stijl.
 9. **Bekende figuurfouten** (roep ze niet per ongeluk "weg te corrigeren"):
-   `assets/ontwerpen_relaties/crows-feet-enumeration.png` heeft een fout label
-   en `assets/sleutels_en_relaties/db-relaties-20250918.drawio.png` toont
-   andere id's dan de tekst. In `todo.md` staat dat beide nakijken; er is ook een
-   openstaand punt "laat alle figuren nakijken door vibos.nl".
+   `assets/sleutels_en_relaties/db-relaties-20250918.drawio.png` toont andere id's dan
+   de tekst. In `todo.md` staat dat nakijken; er is ook een openstaand punt "laat alle
+   figuren nakijken door vibos.nl". De foute
+   `assets/ontwerpen_relaties/crows-feet-enumeration.png` is in november 2026 hertekend
+   en verwijderd: er staat nu `kraaienpoot-notatie-legenda.png` met een bewerkbare
+   SVG-bron ernaast.
 10. **Openstaande punten staan in `todo.md`** (root, getrackt). In de markdown
     zelf staan in-text todo's als HTML-comment `<!-- todo: ... -->`, zodat ze niet
     op de site zichtbaar zijn. Nieuwe todo's: daar bijhouden, niet in de tekst.

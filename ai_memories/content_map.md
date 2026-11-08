@@ -187,13 +187,18 @@ Merijn Vogel. Leerdoelen staan hier (zie `project_overview.md`).
   ..aantal.. **entiteit B**, altijd in paren. Voorbeeldparen: auto/monteur,
   product/klant, plus nog vier paren (leerling/vak, medewerker/afdeling,
   klant/bestelling, gebruiker/account).
-- Kraaienpoten (crow's feet) als tekenwijze voor de kardinaliteit, met plaatje.
+- Kraaienpoten (crow's feet) als tekenwijze voor de kardinaliteit, met plaatje: een
+  legenda met vier rijen (`assets/ontwerpen_relaties/kraaienpoot-notatie-legenda.png`,
+  bewerkbare SVG-bron ernaast). De uitlegzin eronder gaat uit van "één of twee
+  streepjes"; het plaatje tekent 'precies één' als twee streepjes.
 - Van ERDish-zinnen naar ERD: auto/monteur-voorbeeld met plaatje; in dat plaatje
   zie je rechthoeken met afgeronde hoeken, attributen, kraaienpoten en de
   betekenis van de relatie op de lijn.
-- Bekende fout: `crows-feet-enumeration.png` noemt de bovenste kraaienpoot
-  (rondje + ene streep = nul of één) "nul of meer", en de tekst in dat plaatje
-  zegt "precies 1". Er is geen bewerkbare bron bij het plaatje.
+- Plaatje `crows-feet-enumeration.png` is in nov 2026 vervangen door
+  `assets/ontwerpen_relaties/kraaienpoot-notatie-legenda.png` (bewerkbare SVG-bron
+  ernaast). Het oude plaatje noemde de bovenste kraaienpoot (rondje + ene streep = nul
+  of één) "nul of meer" en zei "precies 1"; de vier termen in de nieuwe legenda kloppen
+  wel.
 - Termen hier voor het eerst: kardinaliteit, ERDish-zinnen, kraaienpoten. De
   afkorting ERD wordt hier al volop gebruikt, maar pas in
   `verdieping_relaties.md` uitgelegd als *Entity Relationship Diagram*.
