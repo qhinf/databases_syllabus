@@ -28,7 +28,12 @@ Openstaande punten uit de syllabus. In de markdown staan ze als HTML-comment
 
 ## syllabus/sleutels_en_relaties.md
 
-- [ ] Plaatje `db-relaties-20250918.drawio.png` gebruikt de tabel Vak (id 1-3) terwijl de tekst Parcours (id 100/101) gebruikt; plaatje aanpassen (`todo: plaatje gebruikt de tabel Vak ...`)
+- [x] Plaatje `db-relaties-20250918.drawio.png` gebruikt de tabel Vak (id 1-3) terwijl de tekst Parcours (id 100/101) gebruikt; plaatje aanpassen (`todo: plaatje gebruikt de tabel Vak ...`)
+      *Opgelost door de tekst aan te passen in plaats van het plaatje*: Parcours is verdwenen
+      uit het Q-vakken lexicon, dus de tekst gebruikt nu tabel `Vak` en kolom `vak_id`
+      (commit in de werkboom, nog te reviewen). Het verschil in id's (tekst 100/101,
+      plaatje 1 Filosofie / 2 Informatica / 3 Wiskunde D) blijft bewust open staan; de
+      in-text todo in dat hoofdstuk staat er nog.
 
 ## syllabus/ontwerpen_relaties.md
 

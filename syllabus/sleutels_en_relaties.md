@@ -26,9 +26,9 @@ Bij het aanmaken van een tabel met SQL vertellen we dit ook aan de database:
 CREATE TABLE Docent (id int PRIMARY KEY, voornaam VARCHAR, achternaam VARCHAR);
 ```
 
-Stel, we maken een tweede tabel met parcoursen:
+Stel, we maken een tweede tabel met vakken:
 
-```{table} Parcours
+```{table} Vak
 | id  | naam        |
 |-----|-------------|
 | 100 | Informatica |
@@ -39,11 +39,11 @@ Deze heeft ook een primary key.
 
 ## Relatie
 
-Nu willen we graag docenten en parcoursen aan elkaar koppelen.
-Voor het gemak gaan we ervan uit dat elke docent maar 1 parcours kan geven. We kunnen dan de tabel van docenten uitbreiden:
+Nu willen we graag docenten en vakken aan elkaar koppelen.
+Voor het gemak gaan we ervan uit dat elke docent maar 1 vak kan geven. We kunnen dan de tabel van docenten uitbreiden:
 
 ```{table} Docent
-| id | voornaam | achternaam  | parcours_id |
+| id | voornaam | achternaam  | vak_id |
 |----|----------|-------------|-------------|
 | 1  | Merijn   | Vogel       | 100         |
 | 2  | Arthur   | Rump        | 100         |
@@ -51,16 +51,16 @@ Voor het gemak gaan we ervan uit dat elke docent maar 1 parcours kan geven. We k
 | 4  | Karen    | van Wichen  | 101         |
 ```
 
-We noemen hier niet de naam van het parcours, maar we verwijzen naar de _primary key_ van de tabel _parcours_. Dit legt de _relatie_ vast tussen de twee tabellen.
+We noemen hier niet de naam van het vak, maar we verwijzen naar de _primary key_ van de tabel _vak_. Dit legt de _relatie_ vast tussen de twee tabellen.
 Door te wijzen naar de _primary key_ van de andere tabel helpen we de database: deze kan efficiënt de gegevens bij elkaar halen.
 
 Dit kunnen we aan SQL vertellen op bijvoorbeeld de volgende manier:
 
 ```sql
-ALTER TABLE Docent ADD COLUMN parcours_id int REFERENCES Parcours(id);
+ALTER TABLE Docent ADD COLUMN vak_id int REFERENCES Vak(id);
 ```
 
-De kolom *parcours_id* heet een _foreign key_: de primaire sleutel van een _andere_ (foreign) tabel.
+De kolom *vak_id* heet een _foreign key_: de primaire sleutel van een _andere_ (foreign) tabel.
 
 > De relatie tussen twee tabellen loopt via de _primaire sleutel_ van een van de twee tabellen. Een rij in een tabel verwijst naar de _id_-kolom van de tabel waar die een relatie mee heeft.
 
